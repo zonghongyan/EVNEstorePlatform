@@ -62,6 +62,252 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B145E481E1621DE0036ED7A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E551E1623ED0036ED7A /* Host(首页) */,
+				8B145E491E1623ED0036ED7A /* Attention(关注) */,
+				8B145E621E1625560036ED7A /* Find(发现) */,
+				8B145E511E1623ED0036ED7A /* GoodsCar(购物车) */,
+				8B145E591E1623ED0036ED7A /* MineCenter(个人中心) */,
+				8B145E4D1E1623ED0036ED7A /* Center */,
+				8B145E5D1E1623ED0036ED7A /* OthersThirdLibs(其他三方库) */,
+				8B145E5E1E1623ED0036ED7A /* Tools(工具类) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8B145E491E1623ED0036ED7A /* Attention(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E4A1E1623ED0036ED7A /* Controllers */,
+				8B145E4B1E1623ED0036ED7A /* Models */,
+				8B145E4C1E1623ED0036ED7A /* Views */,
+			);
+			name = "Attention(关注)";
+			path = Attention;
+			sourceTree = "<group>";
+		};
+		8B145E4A1E1623ED0036ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B145E4B1E1623ED0036ED7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B145E4C1E1623ED0036ED7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B145E4D1E1623ED0036ED7A /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E4E1E1623ED0036ED7A /* Controllers */,
+				8B145E4F1E1623ED0036ED7A /* Models */,
+				8B145E501E1623ED0036ED7A /* Views */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		8B145E4E1E1623ED0036ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B145E4F1E1623ED0036ED7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B145E501E1623ED0036ED7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B145E511E1623ED0036ED7A /* GoodsCar(购物车) */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E521E1623ED0036ED7A /* Controllers */,
+				8B145E531E1623ED0036ED7A /* Models */,
+				8B145E541E1623ED0036ED7A /* Views */,
+			);
+			name = "GoodsCar(购物车)";
+			path = GoodsCar;
+			sourceTree = "<group>";
+		};
+		8B145E521E1623ED0036ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B145E531E1623ED0036ED7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B145E541E1623ED0036ED7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B145E551E1623ED0036ED7A /* Host(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E561E1623ED0036ED7A /* Controllers */,
+				8B145E571E1623ED0036ED7A /* Models */,
+				8B145E581E1623ED0036ED7A /* Views */,
+			);
+			name = "Host(首页)";
+			path = Host;
+			sourceTree = "<group>";
+		};
+		8B145E561E1623ED0036ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B145E571E1623ED0036ED7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B145E581E1623ED0036ED7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B145E591E1623ED0036ED7A /* MineCenter(个人中心) */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E5A1E1623ED0036ED7A /* Controllers */,
+				8B145E5B1E1623ED0036ED7A /* Models */,
+				8B145E5C1E1623ED0036ED7A /* Views */,
+			);
+			name = "MineCenter(个人中心)";
+			path = MineCenter;
+			sourceTree = "<group>";
+		};
+		8B145E5A1E1623ED0036ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B145E5B1E1623ED0036ED7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B145E5C1E1623ED0036ED7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B145E5D1E1623ED0036ED7A /* OthersThirdLibs(其他三方库) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "OthersThirdLibs(其他三方库)";
+			path = OthersThirdLibs;
+			sourceTree = "<group>";
+		};
+		8B145E5E1E1623ED0036ED7A /* Tools(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E5F1E1623ED0036ED7A /* Controllers */,
+				8B145E601E1623ED0036ED7A /* Models */,
+				8B145E611E1623ED0036ED7A /* Views */,
+			);
+			name = "Tools(工具类)";
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8B145E5F1E1623ED0036ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B145E601E1623ED0036ED7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B145E611E1623ED0036ED7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8B145E621E1625560036ED7A /* Find(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E631E1625560036ED7A /* Controllers */,
+				8B145E641E1625560036ED7A /* Models */,
+				8B145E651E1625560036ED7A /* Views */,
+			);
+			name = "Find(发现)";
+			path = Find;
+			sourceTree = "<group>";
+		};
+		8B145E631E1625560036ED7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8B145E641E1625560036ED7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B145E651E1625560036ED7A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		8B32F8321E16048100308053 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +331,7 @@
 		8B32F83D1E16048600308053 /* EVNEstorePlatform */ = {
 			isa = PBXGroup;
 			children = (
+				8B145E481E1621DE0036ED7A /* Classes */,
 				8B32F8411E16048600308053 /* AppDelegate.h */,
 				8B32F8421E16048600308053 /* AppDelegate.m */,
 				8B32F8471E16048600308053 /* Main.storyboard */,
