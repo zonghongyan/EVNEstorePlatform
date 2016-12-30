@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E671E162BBB0036ED7A /* EVNTabBarController.m */; };
 		8B145E6A1E162C960036ED7A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E691E162C960036ED7A /* README.md */; };
+		8B145E731E1630CC0036ED7A /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E721E1630CC0036ED7A /* Host.storyboard */; };
+		8B145E751E1630DB0036ED7A /* Attention.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E741E1630DB0036ED7A /* Attention.storyboard */; };
+		8B145E771E1630E80036ED7A /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E761E1630E80036ED7A /* Find.storyboard */; };
+		8B145E791E1630FC0036ED7A /* GoodsCar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E781E1630FC0036ED7A /* GoodsCar.storyboard */; };
+		8B145E7B1E16310A0036ED7A /* MineCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E7A1E16310A0036ED7A /* MineCenter.storyboard */; };
 		8B32F8401E16048600308053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F83F1E16048600308053 /* main.m */; };
 		8B32F8431E16048600308053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F8421E16048600308053 /* AppDelegate.m */; };
 		8B32F8491E16048600308053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F8471E16048600308053 /* Main.storyboard */; };
@@ -35,6 +40,12 @@
 		8B145E661E162BBB0036ED7A /* EVNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNTabBarController.h; sourceTree = "<group>"; };
 		8B145E671E162BBB0036ED7A /* EVNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNTabBarController.m; sourceTree = "<group>"; };
 		8B145E691E162C960036ED7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8B145E701E1630480036ED7A /* HelpHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpHeaderFile.h; sourceTree = "<group>"; };
+		8B145E721E1630CC0036ED7A /* Host.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
+		8B145E741E1630DB0036ED7A /* Attention.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Attention.storyboard; sourceTree = "<group>"; };
+		8B145E761E1630E80036ED7A /* Find.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Find.storyboard; sourceTree = "<group>"; };
+		8B145E781E1630FC0036ED7A /* GoodsCar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GoodsCar.storyboard; sourceTree = "<group>"; };
+		8B145E7A1E16310A0036ED7A /* MineCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MineCenter.storyboard; sourceTree = "<group>"; };
 		8B32F83B1E16048600308053 /* EVNEstorePlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVNEstorePlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B32F83F1E16048600308053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B32F8411E16048600308053 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +128,8 @@
 		8B145E4D1E1623ED0036ED7A /* Center */ = {
 			isa = PBXGroup;
 			children = (
+				8B145E711E1630AF0036ED7A /* Storyboards */,
+				8B145E6B1E162EE50036ED7A /* Others */,
 				8B145E4E1E1623ED0036ED7A /* Controllers */,
 				8B145E4F1E1623ED0036ED7A /* Models */,
 				8B145E501E1623ED0036ED7A /* Views */,
@@ -254,6 +267,7 @@
 		8B145E5E1E1623ED0036ED7A /* Tools(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				8B145E6F1E1630480036ED7A /* Others */,
 				8B145E5F1E1623ED0036ED7A /* Controllers */,
 				8B145E601E1623ED0036ED7A /* Models */,
 				8B145E611E1623ED0036ED7A /* Views */,
@@ -313,6 +327,33 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8B145E6B1E162EE50036ED7A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		8B145E6F1E1630480036ED7A /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E701E1630480036ED7A /* HelpHeaderFile.h */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		8B145E711E1630AF0036ED7A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8B145E721E1630CC0036ED7A /* Host.storyboard */,
+				8B145E741E1630DB0036ED7A /* Attention.storyboard */,
+				8B145E761E1630E80036ED7A /* Find.storyboard */,
+				8B145E781E1630FC0036ED7A /* GoodsCar.storyboard */,
+				8B145E7A1E16310A0036ED7A /* MineCenter.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		8B32F8321E16048100308053 = {
@@ -472,9 +513,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B145E731E1630CC0036ED7A /* Host.storyboard in Resources */,
+				8B145E791E1630FC0036ED7A /* GoodsCar.storyboard in Resources */,
 				8B32F84E1E16048600308053 /* LaunchScreen.storyboard in Resources */,
 				8B32F84B1E16048600308053 /* Assets.xcassets in Resources */,
 				8B32F8491E16048600308053 /* Main.storyboard in Resources */,
+				8B145E751E1630DB0036ED7A /* Attention.storyboard in Resources */,
+				8B145E7B1E16310A0036ED7A /* MineCenter.storyboard in Resources */,
+				8B145E771E1630E80036ED7A /* Find.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
