@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E671E162BBB0036ED7A /* EVNTabBarController.m */; };
 		8B32F8401E16048600308053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F83F1E16048600308053 /* main.m */; };
 		8B32F8431E16048600308053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F8421E16048600308053 /* AppDelegate.m */; };
 		8B32F8491E16048600308053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F8471E16048600308053 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 		0E086CA5A81F341BD66EB341 /* Pods-EVNEstorePlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNEstorePlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform.debug.xcconfig"; sourceTree = "<group>"; };
 		71F0762D37B1ADE884928AA7 /* Pods-EVNEstorePlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNEstorePlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform.release.xcconfig"; sourceTree = "<group>"; };
 		86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EVNEstorePlatform.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B145E661E162BBB0036ED7A /* EVNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNTabBarController.h; sourceTree = "<group>"; };
+		8B145E671E162BBB0036ED7A /* EVNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNTabBarController.m; sourceTree = "<group>"; };
 		8B32F83B1E16048600308053 /* EVNEstorePlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVNEstorePlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B32F83F1E16048600308053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B32F8411E16048600308053 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 		8B145E4E1E1623ED0036ED7A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B145E661E162BBB0036ED7A /* EVNTabBarController.h */,
+				8B145E671E162BBB0036ED7A /* EVNTabBarController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */,
 				8B32F8431E16048600308053 /* AppDelegate.m in Sources */,
 				8B32F8401E16048600308053 /* main.m in Sources */,
 			);
