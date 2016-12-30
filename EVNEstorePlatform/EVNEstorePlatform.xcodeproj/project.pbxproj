@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E671E162BBB0036ED7A /* EVNTabBarController.m */; };
+		8B145E6A1E162C960036ED7A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E691E162C960036ED7A /* README.md */; };
 		8B32F8401E16048600308053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F83F1E16048600308053 /* main.m */; };
 		8B32F8431E16048600308053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F8421E16048600308053 /* AppDelegate.m */; };
 		8B32F8491E16048600308053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F8471E16048600308053 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EVNEstorePlatform.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B145E661E162BBB0036ED7A /* EVNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNTabBarController.h; sourceTree = "<group>"; };
 		8B145E671E162BBB0036ED7A /* EVNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNTabBarController.m; sourceTree = "<group>"; };
+		8B145E691E162C960036ED7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8B32F83B1E16048600308053 /* EVNEstorePlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVNEstorePlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B32F83F1E16048600308053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B32F8411E16048600308053 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 		8B32F8321E16048100308053 = {
 			isa = PBXGroup;
 			children = (
+				8B145E691E162C960036ED7A /* README.md */,
 				8B32F83D1E16048600308053 /* EVNEstorePlatform */,
 				8B32F8571E16048700308053 /* EVNEstorePlatformTests */,
 				8B32F83C1E16048600308053 /* Products */,
@@ -539,6 +542,7 @@
 			files = (
 				8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */,
 				8B32F8431E16048600308053 /* AppDelegate.m in Sources */,
+				8B145E6A1E162C960036ED7A /* README.md in Sources */,
 				8B32F8401E16048600308053 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
