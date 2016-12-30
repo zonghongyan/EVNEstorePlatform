@@ -1,0 +1,16 @@
+platform :ios,’8.0’
+
+
+target ‘EVNEstorePlatform’ do
+
+pod 'MBProgressHUD', '~> 1.0.0'
+pod 'FMDB'
+
+pod 'SDWebImage', '~> 3.8'
+pod 'IQKeyboardManager', '~> 3.3.7'
+
+pod 'MJRefresh'
+pod 'MJExtension'
+
+
+end

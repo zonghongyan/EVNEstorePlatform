@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B32F8401E16048600308053 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F83F1E16048600308053 /* main.m */; };
+		8B32F8431E16048600308053 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F8421E16048600308053 /* AppDelegate.m */; };
+		8B32F8491E16048600308053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F8471E16048600308053 /* Main.storyboard */; };
+		8B32F84B1E16048600308053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F84A1E16048600308053 /* Assets.xcassets */; };
+		8B32F84E1E16048600308053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F84C1E16048600308053 /* LaunchScreen.storyboard */; };
+		8B32F8591E16048700308053 /* EVNEstorePlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F8581E16048700308053 /* EVNEstorePlatformTests.m */; };
+		9A68AEDBF92343F6CCB14848 /* libPods-EVNEstorePlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B32F8551E16048700308053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B32F8331E16048100308053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B32F83A1E16048100308053;
+			remoteInfo = EVNEstorePlatform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E086CA5A81F341BD66EB341 /* Pods-EVNEstorePlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNEstorePlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform.debug.xcconfig"; sourceTree = "<group>"; };
+		71F0762D37B1ADE884928AA7 /* Pods-EVNEstorePlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNEstorePlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform.release.xcconfig"; sourceTree = "<group>"; };
+		86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EVNEstorePlatform.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B32F83B1E16048600308053 /* EVNEstorePlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVNEstorePlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B32F83F1E16048600308053 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B32F8411E16048600308053 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B32F8421E16048600308053 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B32F8481E16048600308053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B32F84A1E16048600308053 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B32F84D1E16048600308053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B32F84F1E16048700308053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B32F8541E16048700308053 /* EVNEstorePlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVNEstorePlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B32F8581E16048700308053 /* EVNEstorePlatformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVNEstorePlatformTests.m; sourceTree = "<group>"; };
+		8B32F85A1E16048700308053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B32F8381E16048100308053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A68AEDBF92343F6CCB14848 /* libPods-EVNEstorePlatform.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B32F8511E16048700308053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B32F8321E16048100308053 = {
+			isa = PBXGroup;
+			children = (
+				8B32F83D1E16048600308053 /* EVNEstorePlatform */,
+				8B32F8571E16048700308053 /* EVNEstorePlatformTests */,
+				8B32F83C1E16048600308053 /* Products */,
+				A2F660E0CD1C23A022D788E9 /* Pods */,
+				A556262B5AECF9B678499068 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B32F83C1E16048600308053 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B32F83B1E16048600308053 /* EVNEstorePlatform.app */,
+				8B32F8541E16048700308053 /* EVNEstorePlatformTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B32F83D1E16048600308053 /* EVNEstorePlatform */ = {
+			isa = PBXGroup;
+			children = (
+				8B32F8411E16048600308053 /* AppDelegate.h */,
+				8B32F8421E16048600308053 /* AppDelegate.m */,
+				8B32F8471E16048600308053 /* Main.storyboard */,
+				8B32F84A1E16048600308053 /* Assets.xcassets */,
+				8B32F84C1E16048600308053 /* LaunchScreen.storyboard */,
+				8B32F84F1E16048700308053 /* Info.plist */,
+				8B32F83E1E16048600308053 /* Supporting Files */,
+			);
+			path = EVNEstorePlatform;
+			sourceTree = "<group>";
+		};
+		8B32F83E1E16048600308053 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B32F83F1E16048600308053 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B32F8571E16048700308053 /* EVNEstorePlatformTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B32F8581E16048700308053 /* EVNEstorePlatformTests.m */,
+				8B32F85A1E16048700308053 /* Info.plist */,
+			);
+			path = EVNEstorePlatformTests;
+			sourceTree = "<group>";
+		};
+		A2F660E0CD1C23A022D788E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E086CA5A81F341BD66EB341 /* Pods-EVNEstorePlatform.debug.xcconfig */,
+				71F0762D37B1ADE884928AA7 /* Pods-EVNEstorePlatform.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A556262B5AECF9B678499068 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B32F83A1E16048100308053 /* EVNEstorePlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B32F85D1E16048700308053 /* Build configuration list for PBXNativeTarget "EVNEstorePlatform" */;
+			buildPhases = (
+				A6663CC3984126E5B6F393E0 /* [CP] Check Pods Manifest.lock */,
+				8B32F8371E16048100308053 /* Sources */,
+				8B32F8381E16048100308053 /* Frameworks */,
+				8B32F8391E16048100308053 /* Resources */,
+				5585FBCA86CCC2FA7D11710F /* [CP] Embed Pods Frameworks */,
+				F8C94F8291B4DFFD58E86FD4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EVNEstorePlatform;
+			productName = EVNEstorePlatform;
+			productReference = 8B32F83B1E16048600308053 /* EVNEstorePlatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B32F8531E16048700308053 /* EVNEstorePlatformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B32F8601E16048700308053 /* Build configuration list for PBXNativeTarget "EVNEstorePlatformTests" */;
+			buildPhases = (
+				8B32F8501E16048700308053 /* Sources */,
+				8B32F8511E16048700308053 /* Frameworks */,
+				8B32F8521E16048700308053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B32F8561E16048700308053 /* PBXTargetDependency */,
+			);
+			name = EVNEstorePlatformTests;
+			productName = EVNEstorePlatformTests;
+			productReference = 8B32F8541E16048700308053 /* EVNEstorePlatformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B32F8331E16048100308053 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "仁伯安";
+				TargetAttributes = {
+					8B32F83A1E16048100308053 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2H6767RL8U;
+						ProvisioningStyle = Automatic;
+					};
+					8B32F8531E16048700308053 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2H6767RL8U;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8B32F83A1E16048100308053;
+					};
+				};
+			};
+			buildConfigurationList = 8B32F8361E16048100308053 /* Build configuration list for PBXProject "EVNEstorePlatform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B32F8321E16048100308053;
+			productRefGroup = 8B32F83C1E16048600308053 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B32F83A1E16048100308053 /* EVNEstorePlatform */,
+				8B32F8531E16048700308053 /* EVNEstorePlatformTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B32F8391E16048100308053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B32F84E1E16048600308053 /* LaunchScreen.storyboard in Resources */,
+				8B32F84B1E16048600308053 /* Assets.xcassets in Resources */,
+				8B32F8491E16048600308053 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B32F8521E16048700308053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5585FBCA86CCC2FA7D11710F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6663CC3984126E5B6F393E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8C94F8291B4DFFD58E86FD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B32F8371E16048100308053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B32F8431E16048600308053 /* AppDelegate.m in Sources */,
+				8B32F8401E16048600308053 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B32F8501E16048700308053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B32F8591E16048700308053 /* EVNEstorePlatformTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B32F8561E16048700308053 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B32F83A1E16048100308053 /* EVNEstorePlatform */;
+			targetProxy = 8B32F8551E16048700308053 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B32F8471E16048600308053 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B32F8481E16048600308053 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B32F84C1E16048600308053 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B32F84D1E16048600308053 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B32F85B1E16048700308053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B32F85C1E16048700308053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B32F85E1E16048700308053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E086CA5A81F341BD66EB341 /* Pods-EVNEstorePlatform.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = EVNEstorePlatform/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.estorePlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8B32F85F1E16048700308053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F0762D37B1ADE884928AA7 /* Pods-EVNEstorePlatform.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = EVNEstorePlatform/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.estorePlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8B32F8611E16048700308053 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = EVNEstorePlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.estorePlatform.EVNEstorePlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNEstorePlatform.app/EVNEstorePlatform";
+			};
+			name = Debug;
+		};
+		8B32F8621E16048700308053 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2H6767RL8U;
+				INFOPLIST_FILE = EVNEstorePlatformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = far.east.estorePlatform.EVNEstorePlatformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNEstorePlatform.app/EVNEstorePlatform";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B32F8361E16048100308053 /* Build configuration list for PBXProject "EVNEstorePlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B32F85B1E16048700308053 /* Debug */,
+				8B32F85C1E16048700308053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B32F85D1E16048700308053 /* Build configuration list for PBXNativeTarget "EVNEstorePlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B32F85E1E16048700308053 /* Debug */,
+				8B32F85F1E16048700308053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B32F8601E16048700308053 /* Build configuration list for PBXNativeTarget "EVNEstorePlatformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B32F8611E16048700308053 /* Debug */,
+				8B32F8621E16048700308053 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B32F8331E16048100308053 /* Project object */;
+}
