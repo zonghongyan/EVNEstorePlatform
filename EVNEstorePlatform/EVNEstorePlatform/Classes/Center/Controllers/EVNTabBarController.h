@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EVNTabBarController : UITabBarController
+@interface EVNTabBarController : UITabBarController<UITabBarControllerDelegate>
 
 @end

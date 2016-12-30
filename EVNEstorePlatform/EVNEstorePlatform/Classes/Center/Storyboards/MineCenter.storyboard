@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ccF-aw-tZq">
             <objects>
-                <navigationController id="vpo-Mi-xkx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mineCenterNavigationC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vpo-Mi-xkx" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xcF-gL-RLb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-345" y="207"/>
         </scene>
-        <!--View Controller-->
+        <!--Mine Center View Controller-->
         <scene sceneID="L6N-Y0-l5o">
             <objects>
-                <viewController id="dl8-Ry-ttR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mineCenterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dl8-Ry-ttR" customClass="MineCenterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DTI-Gv-7Tp"/>
                         <viewControllerLayoutGuide type="bottom" id="BaE-1Q-N85"/>

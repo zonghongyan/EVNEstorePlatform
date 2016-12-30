@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="vbr-hS-V42">
             <objects>
-                <navigationController id="scy-re-gYE" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="attentionNavigationC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="scy-re-gYE" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1l2-SH-VRG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-345" y="207"/>
         </scene>
-        <!--View Controller-->
+        <!--Attention View Controller-->
         <scene sceneID="bfO-9M-0R4">
             <objects>
-                <viewController id="Q6g-o1-mUk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="attentionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Q6g-o1-mUk" customClass="AttentionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ab8-e1-gmg"/>
                         <viewControllerLayoutGuide type="bottom" id="xYr-vU-tIW"/>
@@ -36,7 +36,7 @@
                     <view key="view" contentMode="scaleToFill" id="ZRQ-Qm-8Ds">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.71458333330000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="cPd-26-ytF"/>
                 </viewController>

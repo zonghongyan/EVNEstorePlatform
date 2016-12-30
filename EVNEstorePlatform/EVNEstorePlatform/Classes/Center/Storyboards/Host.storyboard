@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="EBv-rm-Kl6">
             <objects>
-                <navigationController id="5kb-36-rcH" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="hostNavigationC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5kb-36-rcH" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HnJ-9U-eRP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-18" y="212"/>
         </scene>
-        <!--View Controller-->
+        <!--Host View Controller-->
         <scene sceneID="I4j-wP-J3i">
             <objects>
-                <viewController id="Axq-zJ-DKf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="hostViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Axq-zJ-DKf" customClass="HostViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qP0-oc-Bi9"/>
                         <viewControllerLayoutGuide type="bottom" id="dci-5v-yx6"/>
@@ -36,7 +36,7 @@
                     <view key="view" contentMode="scaleToFill" id="yCZ-pl-rgj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.29004629630000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="n8J-8A-hHO"/>
                 </viewController>
