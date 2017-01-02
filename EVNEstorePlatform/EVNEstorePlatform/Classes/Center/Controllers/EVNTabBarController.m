@@ -71,9 +71,9 @@
     UIImage *findUnSelectImImg = [UIImage imageNamed:@"findUnSelect.png"];
     UIStoryboard *findSB = [UIStoryboard storyboardWithName:@"Find" bundle:nil];
     UINavigationController *findNaviVC = [findSB instantiateViewControllerWithIdentifier:@"findNavigationC"];
-    findNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageWithCGImage:findUnSelectImImg.CGImage scale:1.9 orientation:findUnSelectImImg.imageOrientation] selectedImage:[UIImage imageWithCGImage:findSelectImg.CGImage scale:1.9 orientation:findSelectImg.imageOrientation]];
+    findNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageWithCGImage:findUnSelectImImg.CGImage scale:1.5 orientation:findUnSelectImImg.imageOrientation] selectedImage:[UIImage imageWithCGImage:findSelectImg.CGImage scale:1.5 orientation:findSelectImg.imageOrientation]];
 
-    [findNaviVC.tabBarItem setImageInsets:UIEdgeInsetsMake(-13, 0, 14, 0)];
+    [findNaviVC.tabBarItem setImageInsets:UIEdgeInsetsMake(-14, 0, 14, 0)];
     findNaviVC.tabBarItem.tag = 2;
 
     findNaviVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"findSelect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
