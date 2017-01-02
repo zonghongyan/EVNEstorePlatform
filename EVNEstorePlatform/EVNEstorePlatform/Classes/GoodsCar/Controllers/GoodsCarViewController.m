@@ -14,9 +14,12 @@
 
 @implementation GoodsCarViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    self.navigationItem.title = @"购物车";
 }
 
 - (void)didReceiveMemoryWarning {

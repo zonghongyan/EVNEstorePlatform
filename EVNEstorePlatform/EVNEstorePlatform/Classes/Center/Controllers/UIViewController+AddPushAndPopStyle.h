@@ -1,20 +1,16 @@
 //
-//  BaseViewController.h
+//  UIViewController+AddPushAndPopStyle.h
 //  EVNEstorePlatform
 //
-//  Created by developer on 2016/12/30.
-//  Copyright © 2016年 仁伯安. All rights reserved.
+//  Created by developer on 2017/1/2.
+//  Copyright © 2017年 仁伯安. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-/**
- 这个类作为所有NavigationController的父类
- */
+@interface UIViewController (AddPushAndPopStyle)
 
-@interface BaseViewController : UIViewController
-
-
+- (void) pushAndPopStyle;
 
 @end
 

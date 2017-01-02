@@ -20,16 +20,30 @@
 {
     UIBarButtonItem *item = [UIBarButtonItem appearanceWhenContainedIn:self, nil ];
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    dic[NSFontAttributeName] = [UIFont systemFontOfSize:15];
-    dic[NSForegroundColorAttributeName] = [UIColor blackColor];
+    dic[NSFontAttributeName] = [UIFont systemFontOfSize:16];
+    dic[NSForegroundColorAttributeName] = UIColorFromRGB(0x252729);
     [item setTitleTextAttributes:dic forState:UIControlStateNormal];
 
     UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
-    [navBar setBackgroundImage:[EVNHelper imageWithColor:NaviColor size:CGSizeMake(MainScreenWidth, 64)] forBarMetrics:UIBarMetricsDefault];
     NSMutableDictionary *dicBar = [NSMutableDictionary dictionary];
 
     dicBar[NSFontAttributeName] = [UIFont systemFontOfSize:15];
     [navBar setTitleTextAttributes:dic];
+
+    [[UITextField appearance] setTintColor:[UIColor blackColor]]; // 这样设置会改变所有的textfield的光标
+
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]]; // 设置返回按钮颜色
+
+    [navBar setBarTintColor:NaviColor]; // 设置导航条背景颜色
+    // [[UINavigationBar appearance] setBarTintColor:[UIColor whiteColor]];
+
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
 
 - (void)viewDidLoad

@@ -8,6 +8,7 @@
 
 #import "BaseViewController.h"
 #import "HelpHeaderFile.h"
+#import "UIViewController+AddPushAndPopStyle.h"
 
 @interface BaseViewController ()
 
@@ -19,6 +20,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self pushAndPopStyle];
 
     if([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
     {
@@ -33,5 +35,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end

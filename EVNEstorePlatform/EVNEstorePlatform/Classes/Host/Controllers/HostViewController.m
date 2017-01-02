@@ -14,9 +14,11 @@
 
 @implementation HostViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = @"首页";
 }
 
 - (void)didReceiveMemoryWarning {

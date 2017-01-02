@@ -26,6 +26,7 @@
 		8B32F84B1E16048600308053 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F84A1E16048600308053 /* Assets.xcassets */; };
 		8B32F84E1E16048600308053 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B32F84C1E16048600308053 /* LaunchScreen.storyboard */; };
 		8B32F8591E16048700308053 /* EVNEstorePlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B32F8581E16048700308053 /* EVNEstorePlatformTests.m */; };
+		8B4FE5ED1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FE5EC1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.m */; };
 		8B6A71C91E1A44E7002C1D0B /* EVNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A71C81E1A44E7002C1D0B /* EVNNavigationController.m */; };
 		8B6A71CC1E1A45C1002C1D0B /* EVNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A71CB1E1A45C1002C1D0B /* EVNHelper.m */; };
 		9A68AEDBF92343F6CCB14848 /* libPods-EVNEstorePlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */; };
@@ -77,6 +78,8 @@
 		8B32F8541E16048700308053 /* EVNEstorePlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EVNEstorePlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B32F8581E16048700308053 /* EVNEstorePlatformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EVNEstorePlatformTests.m; sourceTree = "<group>"; };
 		8B32F85A1E16048700308053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B4FE5EB1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AddPushAndPopStyle.h"; sourceTree = "<group>"; };
+		8B4FE5EC1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddPushAndPopStyle.m"; sourceTree = "<group>"; };
 		8B6A71C71E1A44E7002C1D0B /* EVNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNNavigationController.h; sourceTree = "<group>"; };
 		8B6A71C81E1A44E7002C1D0B /* EVNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNNavigationController.m; sourceTree = "<group>"; };
 		8B6A71CA1E1A45C1002C1D0B /* EVNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNHelper.h; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 			children = (
 				8B145E661E162BBB0036ED7A /* EVNTabBarController.h */,
 				8B145E671E162BBB0036ED7A /* EVNTabBarController.m */,
+				8B4FE5EB1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.h */,
+				8B4FE5EC1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.m */,
 				8B145E7C1E16442B0036ED7A /* BaseViewController.h */,
 				8B145E7D1E16442B0036ED7A /* BaseViewController.m */,
 				8B6A71C71E1A44E7002C1D0B /* EVNNavigationController.h */,
@@ -631,6 +636,7 @@
 				8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */,
 				8B145E7E1E16442B0036ED7A /* BaseViewController.m in Sources */,
 				8B32F8431E16048600308053 /* AppDelegate.m in Sources */,
+				8B4FE5ED1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.m in Sources */,
 				8B145E8D1E1644960036ED7A /* MineCenterViewController.m in Sources */,
 				8B145E841E16445A0036ED7A /* AttentionViewController.m in Sources */,
 				8B145E6A1E162C960036ED7A /* README.md in Sources */,

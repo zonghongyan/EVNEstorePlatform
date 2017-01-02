@@ -14,9 +14,12 @@
 
 @implementation MineCenterViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    self.navigationItem.title = @"个人中心";
 }
 
 - (void)didReceiveMemoryWarning {
