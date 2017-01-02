@@ -1,20 +1,26 @@
 //
-//  AppDelegate.h
+//  EVNHelper.h
 //  EVNEstorePlatform
 //
-//  Created by developer on 2016/12/30.
-//  Copyright © 2016年 仁伯安. All rights reserved.
+//  Created by developer on 2017/1/2.
+//  Copyright © 2017年 仁伯安. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface EVNHelper : NSObject
 
-@property (strong, nonatomic) UIWindow *window;
 
+/**
+ #pragma mark - 传入颜色和SIZE返回图片
+ @param color color
+ @param size imageSize
+ @return UIImage
+ */
++ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
 
 @end
-
 
 /************************************************************************
  * 作者: 仁伯安

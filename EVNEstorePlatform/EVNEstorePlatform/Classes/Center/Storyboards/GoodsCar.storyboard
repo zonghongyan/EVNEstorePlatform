@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="dOA-8X-ybP">
             <objects>
-                <navigationController storyboardIdentifier="goodsCarNavigationC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pvb-ry-r1I" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="goodsCarNavigationC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pvb-ry-r1I" customClass="EVNNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="A5f-qV-ptI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

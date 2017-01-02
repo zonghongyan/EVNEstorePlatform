@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ccF-aw-tZq">
             <objects>
-                <navigationController storyboardIdentifier="mineCenterNavigationC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vpo-Mi-xkx" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mineCenterNavigationC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vpo-Mi-xkx" customClass="EVNNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xcF-gL-RLb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
