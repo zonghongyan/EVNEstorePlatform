@@ -20,7 +20,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self pushAndPopStyle];
+//    [self pushAndPopStyle];
 
     if([self respondsToSelector:@selector(setEdgesForExtendedLayout:)])
     {

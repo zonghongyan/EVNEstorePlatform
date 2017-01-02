@@ -8,7 +8,14 @@
 
 #import "BaseViewController.h"
 
-@interface HostViewController : BaseViewController
+#import "EVNSearchBar.h"
+
+@interface HostViewController : BaseViewController<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, EVNSearchBarDelegate>
+
+/**
+ *  searchBar
+ */
+@property (strong, nonatomic) EVNSearchBar *searchBar;
 
 @end
 
