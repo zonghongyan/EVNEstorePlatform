@@ -21,14 +21,19 @@
     // Do any additional setup after loading the view.
     [self initCutomBar];
 
-    UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 1)];
-    lineView.backgroundColor = NaviColor;
-    [self.tabBar addSubview:lineView];
+//    UIImageView *lineView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 2)];
+////    lineView.backgroundColor = TabBarColor;
+//    [self.tabBar addSubview:lineView];
+//    lineView.image = [UIImage imageNamed:@"tapbar_top_line"];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tapbar_top_line"]]; // tab_background
 
     // 设置tabbar背景颜色
-    [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
-    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
-    [[UITabBar appearance] setTintColor:NaviColor];
+    [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]]; // 设置tabbar背景颜色
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]]; // 设置tabbar背景颜色
+    [[UITabBar appearance] setTintColor:UIColorFromRGB(0xe9a658)]; // 选中状态时候的字体颜色及背景
+    // 如果需要自定义图片就需要设置以下几行
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : TabBarUnSelectColor} forState:UIControlStateNormal]; // UITabBarItem未选中状态的颜色
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : UIColorFromRGB(0xe9a658)} forState:UIControlStateSelected]; // UITabBarItem选中状态的颜色
 
 }
 
@@ -40,44 +45,51 @@
 - (void)initCutomBar
 {
 
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
     self.delegate = self;
 
 #pragma mark: 首页storyboard
-    UIImage *hostSelectImg = [UIImage imageNamed:@"HostViewSelect"];
-    UIImage *hostUnSelectImg = [UIImage imageNamed:@"HostViewUnSelect"];
+    UIImage *hostSelectImg = [UIImage imageNamed:@"hostViewSelect"];
+    UIImage *hostUnSelectImg = [UIImage imageNamed:@"hostViewUnSelect"];
     UIStoryboard *hostSB = [UIStoryboard storyboardWithName:@"Host" bundle:nil];
     UINavigationController *hostNaviVC = [hostSB instantiateViewControllerWithIdentifier:@"hostNavigationC"];
     hostNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[self scaleImage:hostUnSelectImg] selectedImage:[self scaleImage:hostSelectImg]];
     hostNaviVC.tabBarItem.tag = 0;
 
+
 #pragma mark: 关注storyboard
-    UIImage *attentionSelectImg = [UIImage imageNamed:@"IMViewSelect.png"];
-    UIImage *attentionUnSelectImg = [UIImage imageNamed:@"IMViewUnSelect.png"];
+    UIImage *attentionSelectImg = [UIImage imageNamed:@"attentionSelect.png"];
+    UIImage *attentionUnSelectImg = [UIImage imageNamed:@"attentionUnSelect.png"];
     UIStoryboard *attentionSB = [UIStoryboard storyboardWithName:@"Attention" bundle:nil];
     UINavigationController *attentionNaviVC = [attentionSB instantiateViewControllerWithIdentifier:@"attentionNavigationC"];
     attentionNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"关注" image:[self scaleImage:attentionUnSelectImg] selectedImage:[self scaleImage:attentionSelectImg]];
     attentionNaviVC.tabBarItem.tag = 1;
 
 #pragma mark: 发现storyboard
-    UIImage *findSelectImg = [UIImage imageNamed:@"CategoryViewSelect.png"];
-    UIImage *findUnSelectImImg = [UIImage imageNamed:@"CategoryViewUnSelect.png"];
+
+    UIImage *findSelectImg = [UIImage imageNamed:@"findSelect.png"];
+    UIImage *findUnSelectImImg = [UIImage imageNamed:@"findUnSelect.png"];
     UIStoryboard *findSB = [UIStoryboard storyboardWithName:@"Find" bundle:nil];
     UINavigationController *findNaviVC = [findSB instantiateViewControllerWithIdentifier:@"findNavigationC"];
-    findNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[self scaleImage:findUnSelectImImg] selectedImage:[self scaleImage:findSelectImg]];
+    findNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageWithCGImage:findUnSelectImImg.CGImage scale:1.9 orientation:findUnSelectImImg.imageOrientation] selectedImage:[UIImage imageWithCGImage:findSelectImg.CGImage scale:1.9 orientation:findSelectImg.imageOrientation]];
+
+    [findNaviVC.tabBarItem setImageInsets:UIEdgeInsetsMake(-13, 0, 14, 0)];
     findNaviVC.tabBarItem.tag = 2;
 
+    findNaviVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"findSelect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    findNaviVC.tabBarItem.image = [[UIImage imageNamed:@"findUnSelect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
 #pragma mark: 购物车storyboard
-    UIImage *goodsCarSelectImg = [UIImage imageNamed:@"ShopCarViewSelect.png"];
-    UIImage *goodsCarUnSelectImg = [UIImage imageNamed:@"ShopCarViewUnSelect.png"];
+    UIImage *goodsCarSelectImg = [UIImage imageNamed:@"goodsCarSelect.png"];
+    UIImage *goodsCarUnSelectImg = [UIImage imageNamed:@"goodsCarUnSelect.png"];
     UIStoryboard *goodsCarSB = [UIStoryboard storyboardWithName:@"GoodsCar" bundle:nil];
     UINavigationController *goodsCarNaviVC = [goodsCarSB instantiateViewControllerWithIdentifier:@"goodsCarNavigationC"];
     goodsCarNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"购物车" image:[self scaleImage:goodsCarUnSelectImg] selectedImage:[self scaleImage:goodsCarSelectImg]];
     goodsCarNaviVC.tabBarItem.tag = 3;
 
 #pragma mark: 个人中心storyboard
-    UIImage *mineCenterSelectImg = [UIImage imageNamed:@"MeViewSelect.png"];
-    UIImage *mineCenterUnSelectImg = [UIImage imageNamed:@"MeViewUnSelect.png"];
+    UIImage *mineCenterSelectImg = [UIImage imageNamed:@"mineCenterSelect.png"];
+    UIImage *mineCenterUnSelectImg = [UIImage imageNamed:@"mineCenterUnSelect.png"];
     UIStoryboard *mineCenterSB = [UIStoryboard storyboardWithName:@"MineCenter" bundle:nil];
     UINavigationController *mineCenterNaviVC = [mineCenterSB instantiateViewControllerWithIdentifier:@"mineCenterNavigationC"];
     mineCenterNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我" image:[self scaleImage:mineCenterUnSelectImg] selectedImage:[self scaleImage:mineCenterSelectImg]];

@@ -51,9 +51,12 @@
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define TextColor RGBACOLOR(93, 95, 106, 1.0)
+#define TabBarTextGColor RGBACOLOR(255, 86, 88, 1)
 
 #define NaviColor UIColorFromRGB(0x252729)
 
+#define TabBarSelectColor UIColorFromRGB(0x252729)
+#define TabBarUnSelectColor UIColorFromRGB(0x252729)
 
 #define BUTTONCOLOR ([UIColor colorWithRed:82.0/255.0 green:157.0/255.0 blue:219.0/255.0 alpha:1.0]) // 浅蓝色
 
@@ -62,7 +65,7 @@
 #define LINECOCOR ([UIColor colorWithRed:221.0f/255.0 green:222.0f/255.0 blue:223.0f/255.0 alpha:1.0])
 
 
-#define TabBarTextGColor RGBACOLOR(255, 86, 88, 1)
+
 
 /*
  // MARK: 读取本地图片, 前两种宏性能高，省内存
