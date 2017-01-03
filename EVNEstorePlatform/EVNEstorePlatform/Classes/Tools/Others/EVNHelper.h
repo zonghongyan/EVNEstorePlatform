@@ -12,6 +12,22 @@
 @interface EVNHelper : NSObject
 
 
+
+/**
+ #pragma mark - 从字符串中取出数字
+ @param string string字符串
+ @return 数字字符串
+ */
++ (NSString *) getNumFromString:(NSString *) string;
+
+
+/**
+ #pragma mark - 判断字符串是否为空
+ @param string string字符串
+ @return 是否为存在YES表示不为空，NO为空
+ */
++ (BOOL)validateString:(NSString *)string;
+
 /**
  #pragma mark - 传入颜色和SIZE返回图片
  @param color color
@@ -19,6 +35,32 @@
  @return UIImage
  */
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size;
+
+/**
+ #pragma mark - 缩放图片
+ @param image image
+ @param reSize 重置的size
+ @return UIImage
+ */
++ (UIImage *)reSizeImage:(UIImage *)image toSize:(CGSize)reSize;
+
+/**
+ #pragma mark - 高度或宽度自适应
+ @param font 字体大小
+ @param string 传入的字符串
+ @param size 自适应的大小，一般确定宽度或者确定高度
+ @return CGFloat 对应的大小
+ */
++ (CGFloat)adjustWithFont:(UIFont *)font WithString:(NSString *)string WithSize:(CGSize)size;
+
+/**
+ #pragma mark - 高度或宽度自适应
+ @param font 字体大小
+ @param string 传入字符串
+ @param size 自适应的大小，一般确定宽度或者确定高度
+ @return CGSize 对应大小
+ */
++ (CGSize)adjustWithFont:(UIFont*)font WithText:(NSString *)string WithSize:(CGSize)size;
 
 @end
 
