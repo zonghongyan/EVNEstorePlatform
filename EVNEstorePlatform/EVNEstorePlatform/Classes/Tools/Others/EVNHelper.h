@@ -9,8 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface EVNHelper : NSObject
+/************************************************************************
+ * 作者: 仁伯安
+ * 作者GitHub链接: https://github.com/zonghongyan
+ * 作者简书链接：http://www.jianshu.com/users/ac49bc773ff9/latest_articles
+ * 著作权归作者所有，转载请联系作者获得授权，并标注“作者”。
+ ************************************************************************/
 
+
+@interface EVNHelper : NSObject
 
 
 /**
@@ -18,7 +25,7 @@
  @param string string字符串
  @return 数字字符串
  */
-+ (NSString *) getNumFromString:(NSString *) string;
++ (NSString *)getNumFromString:(NSString *) string;
 
 
 /**
@@ -64,9 +71,4 @@
 
 @end
 
-/************************************************************************
- * 作者: 仁伯安
- * 作者GitHub链接: https://github.com/zonghongyan
- * 作者简书链接：http://www.jianshu.com/users/ac49bc773ff9/latest_articles
- * 著作权归作者所有，转载请联系作者获得授权，并标注“作者”。
- ************************************************************************/
+
