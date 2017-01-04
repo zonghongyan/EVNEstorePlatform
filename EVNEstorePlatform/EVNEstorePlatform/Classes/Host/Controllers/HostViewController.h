@@ -7,10 +7,10 @@
 //
 
 #import "BaseViewController.h"
-
+#import "HotWordSearchViewController.h"
 #import "EVNSearchBar.h"
 
-@interface HostViewController : BaseViewController<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, EVNSearchBarDelegate>
+@interface HostViewController : BaseViewController<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, EVNSearchBarDelegate, HotWordSearchViewDelegate>
 
 /**
  *  searchBar

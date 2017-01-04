@@ -64,7 +64,12 @@
 #define BACKGROUNDCOCOR  ([UIColor colorWithRed:242.f/255.0 green:243.f/255.0 blue:245.0f/255.0 alpha:1.0])
 #define LINECOCOR ([UIColor colorWithRed:221.0f/255.0 green:222.0f/255.0 blue:223.0f/255.0 alpha:1.0])
 
-
+/*
+ // MARK: 定义线条的粗细和角度
+ */
+#define LineWidth .41f
+#define LineCorner 4.0f
+#define LineBorder 1.f
 
 
 /*

@@ -8,6 +8,7 @@
 
 #import "EVNSearchBar.h"
 #import "HelpHeaderFile.h"
+#import "EVNHelper.h"
 
 
 @implementation EVNSearchBar
@@ -48,7 +49,7 @@
             {
                 UITextField *textField = (UITextField*)subview;
                 textField.textColor = [UIColor darkTextColor];                              //修改输入字体的颜色
-                [textField setBackgroundColor:RGBACOLOR(233.f, 233.f, 233.f, 0.6f)];         // 修改输入框的颜色
+                [textField setBackgroundColor:[EVNHelper colorWithHexString:@"#e5e5e5" alpha:1.0]];         // 修改输入框的颜色
                 [textField setValue:TextColor forKeyPath:@"_placeholderLabel.textColor"];   //修改placeholder的颜色
                 _searchBarTextField = textField;
             }

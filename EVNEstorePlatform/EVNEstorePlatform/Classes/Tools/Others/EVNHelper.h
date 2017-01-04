@@ -69,6 +69,14 @@
  */
 + (CGSize)adjustWithFont:(UIFont*)font WithText:(NSString *)string WithSize:(CGSize)size;
 
+/**
+ #pragma mark - 十六进制颜色值
+ @param color 十六进制颜色值
+ @param alpha 透明度
+ @return UIColor
+ */
++ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
+
 @end
 
 

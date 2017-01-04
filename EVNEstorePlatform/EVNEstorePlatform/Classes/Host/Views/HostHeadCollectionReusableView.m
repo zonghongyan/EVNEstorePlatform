@@ -29,7 +29,7 @@ static NSString *ID = @"hostHeaderCollectionViewCell";
     {
         // 添加图片轮播器
         CGFloat loopViewH = 200;
-        NSArray *imageArray = @[@"pic.png", @"pic.png", @"pic.png", @"pic.png", @"pic.png"];
+        NSArray *imageArray = @[@"pic.png", @"lunbo2.png", @"lunbo3.png", @"pic.png", @"lunbo2.png"];
         EVNCarouselView *loopView = [[EVNCarouselView alloc] initWithImageArray:imageArray];
         loopView.frame = CGRectMake(0, 0, MainScreenWidth, loopViewH);
         [self addSubview:loopView];

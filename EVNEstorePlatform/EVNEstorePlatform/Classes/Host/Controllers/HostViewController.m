@@ -12,10 +12,13 @@
 #import "HostCollectionViewCell.h"
 #import "HostHeadCollectionReusableView.h"
 
+
 static NSString *ID = @"hostCollectionViewCell";
 
 @interface HostViewController ()
-
+{
+    HotWordSearchViewController *hotWordSearchViewController;
+}
 @property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
@@ -25,8 +28,10 @@ static NSString *ID = @"hostCollectionViewCell";
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-//    self.navigationController.navigationBar.hidden = YES; // 隐藏navigationBar
-    [self.navigationController.navigationBar setValue:@(0.1) forKeyPath:@"backgroundView.alpha"];
+    //    self.navigationController.navigationBar.hidden = YES; // 隐藏navigationBar
+    [UIView animateWithDuration:1.0 animations:^{
+        [self.navigationController.navigationBar setValue:@(0.1) forKeyPath:@"backgroundView.alpha"];
+    }];
 }
 
 
@@ -39,7 +44,6 @@ static NSString *ID = @"hostCollectionViewCell";
 
     [self.view addSubview:self.collectionView];     // 添加collectionView
     self.collectionView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,8 +57,7 @@ static NSString *ID = @"hostCollectionViewCell";
     {
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, -64, MainScreenWidth, MainScreenHeight - 49) collectionViewLayout:[[HostHeadCollectionViewFlowLayout alloc] init]];
         _collectionView.backgroundColor = RGBACOLOR(238, 238, 238, 1);
-        // 注册cell
-        [_collectionView registerClass:[HostCollectionViewCell class] forCellWithReuseIdentifier:ID];
+        [_collectionView registerClass:[HostCollectionViewCell class] forCellWithReuseIdentifier:ID]; // 注册cell
         // 注册UICollectionReusableView即headerView（切记要添加headerView一定要先注册）
         [_collectionView registerClass:[HostHeadCollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"headerView"];
 
@@ -139,18 +142,66 @@ static NSString *ID = @"hostCollectionViewCell";
     {
         [searchBar resignFirstResponder];
     }
-
+    [self hotWordSearchDismiss];
 }
 
 - (BOOL)evnSearchBarShouldBeginEditing:(UISearchBar *)searchBar
 {
-    return NO;
+    [self.searchBar setShowsCancelButton:YES animated:YES];
+    [self.tabBarController.tabBar setHidden:YES];
+
+    hotWordSearchViewController = [[HotWordSearchViewController alloc] initWithViewControllerName:@"HostViewController"];
+
+    hotWordSearchViewController.hotWordSearchViewDelegate = self;
+    [self addChildViewController:hotWordSearchViewController];
+    [self.view addSubview:hotWordSearchViewController.view];
+
+    return YES;
+}
+
+#pragma mark - HotWordSearchViewDelegate方法,搜索页取消时移除当前视图
+- (void)hotWordSearchDismiss
+{
+    [self.searchBar setShowsCancelButton:NO animated:YES];
+    [self.tabBarController.tabBar setHidden:NO];
+
+    for (UIViewController *viewController in self.childViewControllers)
+    {
+        if ([viewController isKindOfClass:[HotWordSearchViewController class]])
+        {
+            [viewController willMoveToParentViewController:self];
+            [viewController.view removeFromSuperview];
+            [viewController removeFromParentViewController];
+        }
+    }
+
+    hotWordSearchViewController.hotWordSearchViewDelegate = self;
+    hotWordSearchViewController = nil;
+}
+
+- (void)removeAllChildViewControllers
+{
+
+}
+
+#pragma mark: 搜索页传过来的keyWord
+- (void)hotWordSearchSkipViewController:(NSString *)hotWordString
+{
+    [self hotWordSearchDismiss];
+
+    //    NSString *keyWordString = [NSString stringWithFormat:@"keywords=%@&", hotWordString];
+
+    //    B2CShoppingListViewController *filterProductListViewController = [[B2CShoppingListViewController alloc] initWithChannelIdOrKeyWord:keyWordString];
+    //    filterProductListViewController.hidesBottomBarWhenPushed = YES;
+    //    [self.navigationController pushViewController:filterProductListViewController animated:YES];
+    //    [self setHidesBottomBarWhenPushed:NO];
+
 }
 
 - (void)dealloc
 {
     // 移除监听
-//    [_collectionView removeObserver:self forKeyPath:@"contentOffset"];
+    //    [_collectionView removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 

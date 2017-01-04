@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B07B73E1E1C8349005BE7A5 /* HotWordSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07B73D1E1C8349005BE7A5 /* HotWordSearchViewController.m */; };
+		8B07B7411E1C8858005BE7A5 /* HotWordsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07B7401E1C8858005BE7A5 /* HotWordsTableViewCell.m */; };
 		8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E671E162BBB0036ED7A /* EVNTabBarController.m */; };
 		8B145E6A1E162C960036ED7A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E691E162C960036ED7A /* README.md */; };
 		8B145E731E1630CC0036ED7A /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E721E1630CC0036ED7A /* Host.storyboard */; };
@@ -56,6 +58,12 @@
 		0E086CA5A81F341BD66EB341 /* Pods-EVNEstorePlatform.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNEstorePlatform.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform.debug.xcconfig"; sourceTree = "<group>"; };
 		71F0762D37B1ADE884928AA7 /* Pods-EVNEstorePlatform.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EVNEstorePlatform.release.xcconfig"; path = "Pods/Target Support Files/Pods-EVNEstorePlatform/Pods-EVNEstorePlatform.release.xcconfig"; sourceTree = "<group>"; };
 		86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EVNEstorePlatform.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B07B73C1E1C8349005BE7A5 /* HotWordSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotWordSearchViewController.h; sourceTree = "<group>"; };
+		8B07B73D1E1C8349005BE7A5 /* HotWordSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotWordSearchViewController.m; sourceTree = "<group>"; };
+		8B07B73F1E1C8858005BE7A5 /* HotWordsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotWordsTableViewCell.h; sourceTree = "<group>"; };
+		8B07B7401E1C8858005BE7A5 /* HotWordsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotWordsTableViewCell.m; sourceTree = "<group>"; };
+		8B07B7421E1C8E3A005BE7A5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		8B07B7431E1C8E3A005BE7A5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B145E661E162BBB0036ED7A /* EVNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNTabBarController.h; sourceTree = "<group>"; };
 		8B145E671E162BBB0036ED7A /* EVNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNTabBarController.m; sourceTree = "<group>"; };
 		8B145E691E162C960036ED7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -277,6 +285,8 @@
 			children = (
 				8B145E7F1E1644470036ED7A /* HostViewController.h */,
 				8B145E801E1644470036ED7A /* HostViewController.m */,
+				8B07B73C1E1C8349005BE7A5 /* HotWordSearchViewController.h */,
+				8B07B73D1E1C8349005BE7A5 /* HotWordSearchViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,6 +307,8 @@
 				8B936ABE1E1B8D1A00132B31 /* HostHeadCollectionReusableView.m */,
 				8B936AC01E1B8D6800132B31 /* HostHeaderCollectionViewCell.h */,
 				8B936AC11E1B8D6800132B31 /* HostHeaderCollectionViewCell.m */,
+				8B07B73F1E1C8858005BE7A5 /* HotWordsTableViewCell.h */,
+				8B07B7401E1C8858005BE7A5 /* HotWordsTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -711,6 +723,8 @@
 				8B936AC51E1B8DB200132B31 /* EVNCarouselView.m in Sources */,
 				8B936ABC1E1B8CB200132B31 /* HostCollectionViewCell.m in Sources */,
 				8B145E871E16446A0036ED7A /* FindViewController.m in Sources */,
+				8B07B73E1E1C8349005BE7A5 /* HotWordSearchViewController.m in Sources */,
+				8B07B7411E1C8858005BE7A5 /* HotWordsTableViewCell.m in Sources */,
 				8B4FE5F11E1A72940049658B /* EVNSearchBar.m in Sources */,
 				8B145E8A1E1644820036ED7A /* GoodsCarViewController.m in Sources */,
 				8B6A71CC1E1A45C1002C1D0B /* EVNHelper.m in Sources */,
@@ -740,6 +754,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8B32F8481E16048600308053 /* Base */,
+				8B07B7421E1C8E3A005BE7A5 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -748,6 +763,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8B32F84D1E16048600308053 /* Base */,
+				8B07B7431E1C8E3A005BE7A5 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -759,6 +775,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -806,6 +823,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
