@@ -10,7 +10,6 @@
 		8B07B73E1E1C8349005BE7A5 /* HotWordSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07B73D1E1C8349005BE7A5 /* HotWordSearchViewController.m */; };
 		8B07B7411E1C8858005BE7A5 /* HotWordsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B07B7401E1C8858005BE7A5 /* HotWordsTableViewCell.m */; };
 		8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E671E162BBB0036ED7A /* EVNTabBarController.m */; };
-		8B145E6A1E162C960036ED7A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 8B145E691E162C960036ED7A /* README.md */; };
 		8B145E731E1630CC0036ED7A /* Host.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E721E1630CC0036ED7A /* Host.storyboard */; };
 		8B145E751E1630DB0036ED7A /* Attention.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E741E1630DB0036ED7A /* Attention.storyboard */; };
 		8B145E771E1630E80036ED7A /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B145E761E1630E80036ED7A /* Find.storyboard */; };
@@ -66,7 +65,6 @@
 		8B07B7431E1C8E3A005BE7A5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8B145E661E162BBB0036ED7A /* EVNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNTabBarController.h; sourceTree = "<group>"; };
 		8B145E671E162BBB0036ED7A /* EVNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNTabBarController.m; sourceTree = "<group>"; };
-		8B145E691E162C960036ED7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8B145E701E1630480036ED7A /* HelpHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpHeaderFile.h; sourceTree = "<group>"; };
 		8B145E721E1630CC0036ED7A /* Host.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Host.storyboard; sourceTree = "<group>"; };
 		8B145E741E1630DB0036ED7A /* Attention.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Attention.storyboard; sourceTree = "<group>"; };
@@ -465,7 +463,6 @@
 		8B32F8321E16048100308053 = {
 			isa = PBXGroup;
 			children = (
-				8B145E691E162C960036ED7A /* README.md */,
 				8B32F83D1E16048600308053 /* EVNEstorePlatform */,
 				8B32F8571E16048700308053 /* EVNEstorePlatformTests */,
 				8B32F83C1E16048600308053 /* Products */,
@@ -717,7 +714,6 @@
 				8B936AC21E1B8D6800132B31 /* HostHeaderCollectionViewCell.m in Sources */,
 				8B145E8D1E1644960036ED7A /* MineCenterViewController.m in Sources */,
 				8B145E841E16445A0036ED7A /* AttentionViewController.m in Sources */,
-				8B145E6A1E162C960036ED7A /* README.md in Sources */,
 				8B4FE5F41E1A77CC0049658B /* EVNPopView.m in Sources */,
 				8B32F8401E16048600308053 /* main.m in Sources */,
 				8B936AC51E1B8DB200132B31 /* EVNCarouselView.m in Sources */,
