@@ -465,7 +465,7 @@ static NSString *reUserID = @"collectionViewReUserID";
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15, 0, MainScreenWidth, historyCellHeight - 1)];
         label.font = [UIFont systemFontOfSize:13];
         label.textColor = TextColor;
-        label.text = historyDataSourceArray[indexPath.row];
+        label.text = historyDataSourceArray[historyDataSourceArray.count - indexPath.row - 1];
         [cell.contentView addSubview:label];
         UIView *viewLine = [[UIView alloc] initWithFrame:CGRectMake(0, label.frame.size.height, MainScreenWidth, 0.5)];
         viewLine.backgroundColor = LINECOCOR;
@@ -478,7 +478,7 @@ static NSString *reUserID = @"collectionViewReUserID";
 {
     if ([self.hotWordSearchViewDelegate respondsToSelector:@selector(hotWordSearchSkipViewController:)])
     {
-        [self.hotWordSearchViewDelegate hotWordSearchSkipViewController:historyDataSourceArray[indexPath.row]];
+        [self.hotWordSearchViewDelegate hotWordSearchSkipViewController:historyDataSourceArray[historyDataSourceArray.count - indexPath.row - 1]];
     }
 }
 

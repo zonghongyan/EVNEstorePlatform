@@ -50,7 +50,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    self.iconView.frame = CGRectMake(15, 15, self.frame.size.width - 30, self.frame.size.height - 30);
+    self.iconView.frame = CGRectMake(20, 20, self.frame.size.width - 40, self.frame.size.height - 40);
     self.titleLabel.frame = CGRectMake(0, 75, self.frame.size.width, 21);
 }
 

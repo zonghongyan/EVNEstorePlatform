@@ -28,7 +28,7 @@
 
     [self.view setBackgroundColor:[UIColor whiteColor]];
     cellHeight = 66;
-    dataArray = @[@"蒙奇.D.路飞-船长-橡胶果实能力者",@"诺诺亚罗.索隆-战斗员",@"乌索普-狙击手",@"娜美-航海士-(兼财产保管员)",@"山治-厨师-2号战斗员",@"乔巴-船医-蓝鼻子驯鹿",@"弗兰奇-船工",@"尼克.罗宾-历史学家-花花果实能力者",@"布鲁克-音乐家-黄泉果实能力者-西洋剑客"];
+    dataArray = @[@"蒙奇.D.路飞-船长-橡胶果实能力者",@"诺诺亚罗.索隆-副船长角色",@"乌索普-狙击手",@"娜美-航海士-(兼财产保管员)",@"山治-厨师-2号恶魔之子",@"乔巴-船医-蓝鼻子驯鹿",@"弗兰奇-船工",@"尼克.罗宾-历史学家-花花果实能力者",@"布鲁克-音乐家-黄泉果实能力者-西洋剑客"];
     imageArray = @[@"lufei.png",@"suolong.png",@"wusuopu.png",@"namei.png",@"shanzhi.png",@"qiaoba.png",@"fulanqi.png",@"luobin.png",@"buluke.png"];
     [self.view addSubview:self.tableView];
 

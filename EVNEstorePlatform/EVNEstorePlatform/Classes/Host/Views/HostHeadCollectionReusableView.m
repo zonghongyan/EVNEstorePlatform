@@ -63,7 +63,7 @@ static NSString *ID = @"hostHeaderCollectionViewCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     HostHeaderCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
-    cell.imageName = self.buttonIconMutableArray[indexPath.item % self.buttonIconMutableArray.count];
+    cell.imageName = self.buttonIconMutableArray[indexPath.item % (self.buttonIconMutableArray.count - 1)];
     switch (indexPath.item)
     {
         case 0:
