@@ -10,3 +10,5 @@
 ![展示图](https://github.com/zonghongyan/EVNEstorePlatform/blob/3faf7ebc1bc00cd520b33ef86957f1ce9c36144a/EVNEstorePlatform/EVNEstorePlatform/Assets.xcassets/showPic/Sticker%20Pack.stickerpack/Show.sticker/Show.gif)
 ![展示图01](https://github.com/zonghongyan/EVNEstorePlatform/blob/3faf7ebc1bc00cd520b33ef86957f1ce9c36144a/EVNEstorePlatform/EVNEstorePlatform/Assets.xcassets/showPic/Sticker%20Pack.stickerpack/Show01.sticker/Show01.gif)
 ![展示图02](https://github.com/zonghongyan/EVNEstorePlatform/blob/3faf7ebc1bc00cd520b33ef86957f1ce9c36144a/EVNEstorePlatform/EVNEstorePlatform/Assets.xcassets/showPic/Sticker%20Pack.stickerpack/Show02.sticker/Show02.gif)
+
+<img src="https://github.com/zonghongyan/EVNEstorePlatform/blob/3faf7ebc1bc00cd520b33ef86957f1ce9c36144a/EVNEstorePlatform/EVNEstorePlatform/Assets.xcassets/showPic/Sticker%20Pack.stickerpack/Show02.sticker/Show02.gif" width="50%" height="50%" />
