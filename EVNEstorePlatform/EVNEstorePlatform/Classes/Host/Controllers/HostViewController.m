@@ -179,11 +179,6 @@ static NSString *ID = @"hostCollectionViewCell";
     hotWordSearchViewController = nil;
 }
 
-- (void)removeAllChildViewControllers
-{
-
-}
-
 #pragma mark: 搜索页传过来的keyWord
 - (void)hotWordSearchSkipViewController:(NSString *)hotWordString
 {
@@ -201,7 +196,7 @@ static NSString *ID = @"hostCollectionViewCell";
 - (void)dealloc
 {
     // 移除监听
-    //    [_collectionView removeObserver:self forKeyPath:@"contentOffset"];
+    [_collectionView removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 

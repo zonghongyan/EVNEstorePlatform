@@ -7,8 +7,15 @@
 //
 
 #import "BaseViewController.h"
+//#import <WebKit/WebKit.h>
 
-@interface MineCenterViewController : BaseViewController
+@interface MineCenterViewController : BaseViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) UITableView *tableView;
+
+@property (strong, nonatomic) UIImageView *navTitleView;
+
+//@property (strong, nonatomic) WKWebView *wkWebView;
 
 @end
 
