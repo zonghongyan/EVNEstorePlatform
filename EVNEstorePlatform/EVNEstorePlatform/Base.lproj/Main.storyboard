@@ -21,7 +21,42 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QcB-BF-fgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="155"/>
+            <point key="canvasLocation" x="-676" y="861"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bbR-hx-utQ">
+            <objects>
+                <navigationController id="s0p-ki-xxu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nka-bu-Slr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WNL-CT-n8A" kind="relationship" relationship="rootViewController" id="Uuk-jc-wcu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9UQ-yP-JVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="833"/>
+        </scene>
+        <!--登录-->
+        <scene sceneID="PC7-OK-ZUx">
+            <objects>
+                <viewController storyboardIdentifier="loginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WNL-CT-n8A" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="npb-lc-VPG"/>
+                        <viewControllerLayoutGuide type="bottom" id="x0s-OE-qlY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9iI-r2-7Qb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="登录" id="hNq-Tg-0MV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2d7-07-QM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="834" y="833"/>
         </scene>
     </scenes>
 </document>

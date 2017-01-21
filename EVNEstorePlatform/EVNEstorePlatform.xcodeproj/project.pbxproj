@@ -32,6 +32,12 @@
 		8B4FE5F41E1A77CC0049658B /* EVNPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4FE5F31E1A77CC0049658B /* EVNPopView.m */; };
 		8B6A71C91E1A44E7002C1D0B /* EVNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A71C81E1A44E7002C1D0B /* EVNNavigationController.m */; };
 		8B6A71CC1E1A45C1002C1D0B /* EVNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A71CB1E1A45C1002C1D0B /* EVNHelper.m */; };
+		8B6BAAF81E3322EF00B6CCA1 /* UIWindow+StartLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BAAF71E3322EF00B6CCA1 /* UIWindow+StartLaunch.m */; };
+		8B6BAAFC1E33235E00B6CCA1 /* WelComeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BAAFA1E33235E00B6CCA1 /* WelComeViewController.m */; };
+		8B6BAAFD1E33235E00B6CCA1 /* WelComeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B6BAAFB1E33235E00B6CCA1 /* WelComeViewController.xib */; };
+		8B6BAB001E332B7600B6CCA1 /* GetTokenFailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BAAFF1E332B7600B6CCA1 /* GetTokenFailViewController.m */; };
+		8B6BAB031E332BFC00B6CCA1 /* EVNHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BAB021E332BFC00B6CCA1 /* EVNHUD.m */; };
+		8B6BAB061E3331CD00B6CCA1 /* AdvertiseLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6BAB051E3331CD00B6CCA1 /* AdvertiseLaunchViewController.m */; };
 		8B936AB91E1B8C3E00132B31 /* HostHeadCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936AB81E1B8C3E00132B31 /* HostHeadCollectionViewFlowLayout.m */; };
 		8B936ABC1E1B8CB200132B31 /* HostCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936ABB1E1B8CB200132B31 /* HostCollectionViewCell.m */; };
 		8B936ABF1E1B8D1A00132B31 /* HostHeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936ABE1E1B8D1A00132B31 /* HostHeadCollectionReusableView.m */; };
@@ -105,6 +111,17 @@
 		8B6A71C81E1A44E7002C1D0B /* EVNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNNavigationController.m; sourceTree = "<group>"; };
 		8B6A71CA1E1A45C1002C1D0B /* EVNHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNHelper.h; sourceTree = "<group>"; };
 		8B6A71CB1E1A45C1002C1D0B /* EVNHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNHelper.m; sourceTree = "<group>"; };
+		8B6BAAF61E3322EF00B6CCA1 /* UIWindow+StartLaunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+StartLaunch.h"; sourceTree = "<group>"; };
+		8B6BAAF71E3322EF00B6CCA1 /* UIWindow+StartLaunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+StartLaunch.m"; sourceTree = "<group>"; };
+		8B6BAAF91E33235E00B6CCA1 /* WelComeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelComeViewController.h; sourceTree = "<group>"; };
+		8B6BAAFA1E33235E00B6CCA1 /* WelComeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelComeViewController.m; sourceTree = "<group>"; };
+		8B6BAAFB1E33235E00B6CCA1 /* WelComeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelComeViewController.xib; sourceTree = "<group>"; };
+		8B6BAAFE1E332B7600B6CCA1 /* GetTokenFailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTokenFailViewController.h; sourceTree = "<group>"; };
+		8B6BAAFF1E332B7600B6CCA1 /* GetTokenFailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTokenFailViewController.m; sourceTree = "<group>"; };
+		8B6BAB011E332BFC00B6CCA1 /* EVNHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVNHUD.h; sourceTree = "<group>"; };
+		8B6BAB021E332BFC00B6CCA1 /* EVNHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNHUD.m; sourceTree = "<group>"; };
+		8B6BAB041E3331CD00B6CCA1 /* AdvertiseLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvertiseLaunchViewController.h; sourceTree = "<group>"; };
+		8B6BAB051E3331CD00B6CCA1 /* AdvertiseLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvertiseLaunchViewController.m; sourceTree = "<group>"; };
 		8B936AB71E1B8C3E00132B31 /* HostHeadCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostHeadCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		8B936AB81E1B8C3E00132B31 /* HostHeadCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostHeadCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		8B936ABA1E1B8CB200132B31 /* HostCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostCollectionViewCell.h; sourceTree = "<group>"; };
@@ -368,6 +385,12 @@
 		8B145E5F1E1623ED0036ED7A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B6BAAFE1E332B7600B6CCA1 /* GetTokenFailViewController.h */,
+				8B6BAAFF1E332B7600B6CCA1 /* GetTokenFailViewController.m */,
+				8B6BAB011E332BFC00B6CCA1 /* EVNHUD.h */,
+				8B6BAB021E332BFC00B6CCA1 /* EVNHUD.m */,
+				8B6BAB041E3331CD00B6CCA1 /* AdvertiseLaunchViewController.h */,
+				8B6BAB051E3331CD00B6CCA1 /* AdvertiseLaunchViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -429,6 +452,9 @@
 		8B145E6B1E162EE50036ED7A /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				8B6BAAF91E33235E00B6CCA1 /* WelComeViewController.h */,
+				8B6BAAFA1E33235E00B6CCA1 /* WelComeViewController.m */,
+				8B6BAAFB1E33235E00B6CCA1 /* WelComeViewController.xib */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -444,6 +470,8 @@
 				8B4FE5F31E1A77CC0049658B /* EVNPopView.m */,
 				8B936AC91E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.h */,
 				8B936ACA1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m */,
+				8B6BAAF61E3322EF00B6CCA1 /* UIWindow+StartLaunch.h */,
+				8B6BAAF71E3322EF00B6CCA1 /* UIWindow+StartLaunch.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -633,6 +661,7 @@
 				8B32F84B1E16048600308053 /* Assets.xcassets in Resources */,
 				8B32F8491E16048600308053 /* Main.storyboard in Resources */,
 				8B145E751E1630DB0036ED7A /* Attention.storyboard in Resources */,
+				8B6BAAFD1E33235E00B6CCA1 /* WelComeViewController.xib in Resources */,
 				8B145E7B1E16310A0036ED7A /* MineCenter.storyboard in Resources */,
 				8B145E771E1630E80036ED7A /* Find.storyboard in Resources */,
 			);
@@ -703,17 +732,22 @@
 				8B6A71C91E1A44E7002C1D0B /* EVNNavigationController.m in Sources */,
 				8B145E811E1644470036ED7A /* HostViewController.m in Sources */,
 				8B936AC81E1B8DF000132B31 /* EVNCarouselCollectionViewCell.m in Sources */,
+				8B6BAB061E3331CD00B6CCA1 /* AdvertiseLaunchViewController.m in Sources */,
 				8B936ACE1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m in Sources */,
 				8B936ABF1E1B8D1A00132B31 /* HostHeadCollectionReusableView.m in Sources */,
+				8B6BAAFC1E33235E00B6CCA1 /* WelComeViewController.m in Sources */,
 				8B936AB91E1B8C3E00132B31 /* HostHeadCollectionViewFlowLayout.m in Sources */,
 				8B145E681E162BBB0036ED7A /* EVNTabBarController.m in Sources */,
+				8B6BAAF81E3322EF00B6CCA1 /* UIWindow+StartLaunch.m in Sources */,
 				8B145E7E1E16442B0036ED7A /* BaseViewController.m in Sources */,
 				8B936ACB1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m in Sources */,
 				8B32F8431E16048600308053 /* AppDelegate.m in Sources */,
 				8B4FE5ED1E1A52FB0049658B /* UIViewController+AddPushAndPopStyle.m in Sources */,
 				8B936AC21E1B8D6800132B31 /* HostHeaderCollectionViewCell.m in Sources */,
+				8B6BAB001E332B7600B6CCA1 /* GetTokenFailViewController.m in Sources */,
 				8B145E8D1E1644960036ED7A /* MineCenterViewController.m in Sources */,
 				8B145E841E16445A0036ED7A /* AttentionViewController.m in Sources */,
+				8B6BAB031E332BFC00B6CCA1 /* EVNHUD.m in Sources */,
 				8B4FE5F41E1A77CC0049658B /* EVNPopView.m in Sources */,
 				8B32F8401E16048600308053 /* main.m in Sources */,
 				8B936AC51E1B8DB200132B31 /* EVNCarouselView.m in Sources */,

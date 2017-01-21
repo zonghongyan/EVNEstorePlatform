@@ -7,16 +7,31 @@
 //
 
 #import "AppDelegate.h"
+#import "UIWindow+StartLaunch.h"
+#import "WelComeViewController.h"
+#import "EVNTabBarController.h"
+#import "GetTokenFailViewController.h"
+#import "AdvertiseLaunchViewController.h"
 
 @interface AppDelegate ()
+{
+    EVNTabBarController *tabbar;
+    UIStoryboard *mainSB;
+}
 
 @end
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     // Override point for customization after application launch.
+
+    [NSThread sleepForTimeInterval:3.0];//设置启动页面时间
+    mainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    tabbar = [mainSB instantiateViewControllerWithIdentifier:@"tabBarController"]; // 初始化TabBar
+    [self dealEnterToDCFTabbar:@"启动页"];
+
     return YES;
 }
 
@@ -45,6 +60,53 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - 页面跳转及入口跳转方法
+- (void)dealEnterToDCFTabbar:(NSString *)toWhere
+{
+    if ([toWhere isEqualToString:@"启动页"])
+    {
+        UIViewController *rootViewController = nil;                             // 判断是否是第一次登陆
+        if(![[NSUserDefaults standardUserDefaults] objectForKey:@"FirstLanch"]) // 欢迎页
+        {
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"FirstLanch"];
+            WelComeViewController *welcomeVC = [[WelComeViewController alloc] initWithNibName:@"WelComeViewController" bundle:nil];
+            rootViewController = welcomeVC;
+        }
+        else
+        {
+             GetTokenFailViewController *getTokenFailViewController = [[GetTokenFailViewController alloc] init];
+             rootViewController = getTokenFailViewController;
+        }
+        [self.window startLaunchForRootController:rootViewController];           // 一般启动方式
+    }
+    else if([toWhere isEqualToString:@"欢迎页"])
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithBool:YES] forKey:@"FirstLanch"];
+
+        WelComeViewController *welcomeVC = [[WelComeViewController alloc] initWithNibName:@"WelComeViewController" bundle:nil];
+        [self.window startLaunchForRootController:welcomeVC];
+    }
+    else if ([toWhere isEqualToString:@"tokenView"])
+    {
+        GetTokenFailViewController *getTokenFailViewController = [[GetTokenFailViewController alloc] init];
+        [self.window startLaunchForRootController:getTokenFailViewController];
+    }
+    else if ([toWhere isEqualToString:@"广告页"])
+    {
+         AdvertiseLaunchViewController *advertiseLaunchViewController = [[AdvertiseLaunchViewController alloc] init];
+         [self.window startLaunchForRootController:advertiseLaunchViewController];
+    }
+    else if ([toWhere isEqualToString:@"首页"])
+    {
+        if(tabbar == nil)
+        {
+            tabbar = [mainSB instantiateViewControllerWithIdentifier:@"tabBarController"];
+        }
+        [self.window startLaunchForRootController:tabbar];
+        [tabbar setSelectedIndex:0];
+    }
 }
 
 

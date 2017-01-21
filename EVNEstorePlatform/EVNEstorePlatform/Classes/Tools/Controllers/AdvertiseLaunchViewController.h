@@ -1,16 +1,14 @@
 //
-//  UIViewController+AddPushAndPopStyle.h
+//  AdvertiseLaunchViewController.h
 //  EVNEstorePlatform
 //
-//  Created by developer on 2017/1/2.
+//  Created by developer on 2017/1/21.
 //  Copyright © 2017年 仁伯安. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface UIViewController (AddPushAndPopStyle)
-
-- (void) pushAndPopStyle;
+@interface AdvertiseLaunchViewController : BaseViewController
 
 @end
 
