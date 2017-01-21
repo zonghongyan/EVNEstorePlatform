@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +35,16 @@
 			<false/>
 		</dict>
 		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MWPhotoBrowser.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PSTCollectionView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1A0BD28A72B27F6731C3C4F814D6DB74</key>
+		<key>29E0C9DE3FF70395BE8E9E30B0707D10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +82,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7BF9B1D0DADA3AB54562D89649731697</key>
+		<key>7DF11ADB88A0E7F937A19872D5724754</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +92,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C791F0A928C1A8FE97074DFC9ACF4E75</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAA12EAD0C0BCB2C976BFDEB20EEB424</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E37C141AF883CEE3D5A8E4BB5D415B74</key>
 		<dict>
 			<key>primary</key>
 			<true/>

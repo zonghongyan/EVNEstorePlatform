@@ -12,5 +12,8 @@ pod 'IQKeyboardManager', '~> 3.3.7'
 pod 'MJRefresh'
 pod 'MJExtension'
 
+pod 'MWPhotoBrowser'
+
+pod 'AFNetworking', '~> 3.0'
 
 end
