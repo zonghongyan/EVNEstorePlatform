@@ -43,7 +43,7 @@
     // TODO: 修改广告图
     NSString *imgUrl = [[NSUserDefaults standardUserDefaults] objectForKey:@"StartAdvertiseTag"]; // 加载广告图
     NSLog(@"%@",imgUrl);
-    [imgview sd_setImageWithURL:[NSURL URLWithString:imgUrl] placeholderImage:[UIImage imageNamed:@"Retina HD 5.5.png"] options:SDWebImageHighPriority]; // 广告页而言，是优先下载，其次使用缓存
+    [imgview sd_setImageWithURL:[NSURL URLWithString:imgUrl] placeholderImage:[UIImage imageNamed:@"RetinaImage.png"] options:SDWebImageHighPriority]; // 广告页而言，是优先下载，其次使用缓存
 
     UIButton *skipCurrentVCBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     skipCurrentVCBtn.frame = CGRectMake(MainScreenWidth - 88.f, 16, 66, 44);

@@ -46,16 +46,18 @@
     [self.view addSubview:_pageControl];
 
     [self.sv setDelegate:self];
+    self.sv.showsHorizontalScrollIndicator = NO;
+    self.sv.showsVerticalScrollIndicator = NO;
     [self.sv setContentSize:CGSizeMake(MainScreenWidth*3, MainScreenHeight)];
 
-    //加载图片
-    UIImage *image_1 = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"welcome_1" ofType:@"png"]];
+
+    UIImage *image_1 = [UIImage imageNamed:@"RetinaImage"]; // 加载图片
     [self.iv_Fir setImage:image_1];
 
-    UIImage *image_2 = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"welcome_2" ofType:@"png"]];
+    UIImage *image_2 = [UIImage imageNamed:@"RetinaImage"];
     [self.iv_Sec setImage:image_2];
 
-    UIImage *image_3 = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"welcome_3" ofType:@"png"]];
+    UIImage *image_3 = [UIImage imageNamed:@"RetinaImage"];
     [self.iv_Third setImage:image_3];
 
 
@@ -89,7 +91,6 @@
     dispatch_async(dispatch_get_main_queue(), ^(void){
 
         [appDel dealEnterToDCFTabbar:@"tokenView"];
-
     });
 }
 
