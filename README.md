@@ -11,3 +11,5 @@
 <img src="https://github.com/zonghongyan/EVNEstorePlatform/blob/3faf7ebc1bc00cd520b33ef86957f1ce9c36144a/EVNEstorePlatform/EVNEstorePlatform/Assets.xcassets/showPic/Sticker%20Pack.stickerpack/Show.sticker/Show.gif" width="20%" height="20%" alt="展示图" />
 <img src="https://github.com/zonghongyan/EVNEstorePlatform/blob/3faf7ebc1bc00cd520b33ef86957f1ce9c36144a/EVNEstorePlatform/EVNEstorePlatform/Assets.xcassets/showPic/Sticker%20Pack.stickerpack/Show01.sticker/Show01.gif" width="20%" height="20%" alt="展示图" />
 <img src="https://github.com/zonghongyan/EVNEstorePlatform/blob/3faf7ebc1bc00cd520b33ef86957f1ce9c36144a/EVNEstorePlatform/EVNEstorePlatform/Assets.xcassets/showPic/Sticker%20Pack.stickerpack/Show02.sticker/Show02.gif" width="20%" height="20%" alt="展示图" />
+
+- [iOS APP框架搭建简析（附GitHub托管Demo）](http://www.jianshu.com/p/89e25c288d76)
