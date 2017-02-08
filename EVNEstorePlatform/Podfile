@@ -6,7 +6,7 @@ target ‘EVNEstorePlatform’ do
 pod 'MBProgressHUD', '~> 1.0.0'
 pod 'FMDB'
 
-pod 'SDWebImage', '~> 3.8'
+pod 'SDWebImage'
 pod 'IQKeyboardManager', '~> 3.3.7'
 
 pod 'MJRefresh'

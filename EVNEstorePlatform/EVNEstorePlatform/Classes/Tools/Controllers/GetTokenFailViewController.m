@@ -50,6 +50,7 @@
     // 这个地方一般需要一个接口
 //    if 需要广告页
     NSString *imgUrl = @"http://upload-images.jianshu.io/upload_images/949086-ccf562d6183c66ce.png";
+//    NSString *imgUrl = @"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg";
     [[NSUserDefaults standardUserDefaults] setObject:imgUrl forKey:@"StartAdvertiseTag"];
     [self goNextVC:@"广告页"];
 //    else
