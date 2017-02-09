@@ -46,6 +46,7 @@
 		8B936AC81E1B8DF000132B31 /* EVNCarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936AC71E1B8DF000132B31 /* EVNCarouselCollectionViewCell.m */; };
 		8B936ACB1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936ACA1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m */; };
 		8B936ACE1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936ACD1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m */; };
+		8BD034501E4C619100BCD682 /* UITableView+NoDataOrException.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0344F1E4C619100BCD682 /* UITableView+NoDataOrException.m */; };
 		9A68AEDBF92343F6CCB14848 /* libPods-EVNEstorePlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +139,8 @@
 		8B936ACA1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNCarouseCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		8B936ACC1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostHeaderCollectionViewCellFlowLayout.h; sourceTree = "<group>"; };
 		8B936ACD1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostHeaderCollectionViewCellFlowLayout.m; sourceTree = "<group>"; };
+		8BD0344E1E4C619100BCD682 /* UITableView+NoDataOrException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NoDataOrException.h"; sourceTree = "<group>"; };
+		8BD0344F1E4C619100BCD682 /* UITableView+NoDataOrException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NoDataOrException.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +376,7 @@
 		8B145E5E1E1623ED0036ED7A /* Tools(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				8BD0344D1E4C616300BCD682 /* Categorys */,
 				8B145E6F1E1630480036ED7A /* Others */,
 				8B145E5F1E1623ED0036ED7A /* Controllers */,
 				8B145E601E1623ED0036ED7A /* Models */,
@@ -549,6 +553,15 @@
 				8B936ACD1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m */,
 			);
 			path = others;
+			sourceTree = "<group>";
+		};
+		8BD0344D1E4C616300BCD682 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				8BD0344E1E4C619100BCD682 /* UITableView+NoDataOrException.h */,
+				8BD0344F1E4C619100BCD682 /* UITableView+NoDataOrException.m */,
+			);
+			path = Categorys;
 			sourceTree = "<group>";
 		};
 		A2F660E0CD1C23A022D788E9 /* Pods */ = {
@@ -756,6 +769,7 @@
 				8B07B73E1E1C8349005BE7A5 /* HotWordSearchViewController.m in Sources */,
 				8B07B7411E1C8858005BE7A5 /* HotWordsTableViewCell.m in Sources */,
 				8B4FE5F11E1A72940049658B /* EVNSearchBar.m in Sources */,
+				8BD034501E4C619100BCD682 /* UITableView+NoDataOrException.m in Sources */,
 				8B145E8A1E1644820036ED7A /* GoodsCarViewController.m in Sources */,
 				8B6A71CC1E1A45C1002C1D0B /* EVNHelper.m in Sources */,
 			);
