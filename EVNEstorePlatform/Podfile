@@ -14,6 +14,8 @@ pod 'MJExtension'
 
 pod 'MWPhotoBrowser'
 
+pod 'GPUImage', '~>0.1.7'
+
 pod 'AFNetworking', '~> 3.0'
 
 end
