@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6004932FBEFCD67495262226345A5867'
+               BlueprintIdentifier = '78D204636B7ADD7B272A00768D06BADA'
                BlueprintName = 'Pods-EVNEstorePlatform'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-EVNEstorePlatform.a'>

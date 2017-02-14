@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>DACircularProgress.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,16 +39,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MWPhotoBrowser.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>PSTCollectionView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-EVNEstorePlatform.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,11 +62,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>09CD51A63B422B966B14A37B870A4369</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>4F69F82C1EEBC0A05686A3B0FECD2FDB</key>
 		<dict>
 			<key>primary</key>
@@ -92,12 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6004932FBEFCD67495262226345A5867</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6D4E2CE2155022144B80A2E9D42793ED</key>
+		<key>78D204636B7ADD7B272A00768D06BADA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A2F3EEC09A4EB435B524BB2BB1DB1981</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C791F0A928C1A8FE97074DFC9ACF4E75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E95D9CD928D0F41CBBC7A095152DD587</key>
 		<dict>
 			<key>primary</key>
 			<true/>
