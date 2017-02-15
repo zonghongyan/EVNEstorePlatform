@@ -25,7 +25,7 @@
     [item setTitleTextAttributes:dic forState:UIControlStateNormal];
 
     // appearanceWhenContainedInInstancesOfClasses的含义就是让UINavigationBar在EVNNavigationController表现为某种特性
-    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[self]];
+    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[self class]]];
     NSMutableDictionary *dicBar = [NSMutableDictionary dictionary];
 
     dicBar[NSFontAttributeName] = [UIFont systemFontOfSize:16];
