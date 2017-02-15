@@ -944,7 +944,7 @@
 				DEVELOPMENT_TEAM = 2H6767RL8U;
 				INFOPLIST_FILE = EVNEstorePlatformTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = far.east.estorePlatform.EVNEstorePlatformTests;
+				PRODUCT_BUNDLE_IDENTIFIER = asdf.estorePlatform.EVNEstorePlatformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNEstorePlatform.app/EVNEstorePlatform";
 			};
@@ -957,7 +957,7 @@
 				DEVELOPMENT_TEAM = 2H6767RL8U;
 				INFOPLIST_FILE = EVNEstorePlatformTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = far.east.estorePlatform.EVNEstorePlatformTests;
+				PRODUCT_BUNDLE_IDENTIFIER = asdf.estorePlatform.EVNEstorePlatformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EVNEstorePlatform.app/EVNEstorePlatform";
 			};
