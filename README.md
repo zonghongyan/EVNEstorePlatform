@@ -1,7 +1,7 @@
 # EVNEstorePlatform
 [![Build Status](https://travis-ci.org/zonghongyan/EVNEstorePlatform.svg?branch=master)](https://travis-ci.org/zonghongyan/EVNEstorePlatform)
-电工电气电子商务平台 框架（Electrician electrical e-commerce platform）
 
+电工电气电子商务平台 框架（Electrician electrical e-commerce platform）
 
 - [作者: 仁伯安](http://www.jianshu.com/users/ac49bc773ff9)
 - [作者GitHub链接](https://github.com/zonghongyan)
