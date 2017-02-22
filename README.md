@@ -2,7 +2,8 @@
 [![Build Status](https://travis-ci.org/zonghongyan/EVNEstorePlatform.svg?branch=master)](https://travis-ci.org/zonghongyan/EVNEstorePlatform)
 [![License](https://img.shields.io/github/license/zonghongyan/EVNEstorePlatform.svg?style=flat)](https://github.com/zonghongyan/EVNEstorePlatform/blob/master/LICENSE)
 
-电工电气电子商务平台 框架（Electrician electrical e-commerce platform）
+### Electronic commerce iOS APP framework
+The structure of the APP is divided into three main line:One of the main frame process;A framework is the user login process;Other such as advertising page, a welcome page, etc
 
 - [作者: 仁伯安](http://www.jianshu.com/users/ac49bc773ff9)
 - [作者GitHub链接](https://github.com/zonghongyan)
@@ -16,9 +17,9 @@
 
 * [x] [iOS APP框架搭建简析（附GitHub托管Demo）](http://www.jianshu.com/p/89e25c288d76)
 
-### 联系方式
+### contact
 
-Email: `renboan@aliyun.com`  
+Email: `renboan@aliyun.com` or 'zonghongyan@126.com'
 
 ##### 简书
 
