@@ -19,10 +19,14 @@ The structure of the APP is divided into three main line:One of the main frame p
 
 ### contact
 
-Email: `renboan@aliyun.com` or 'zonghongyan@126.com'
+Email: `renboan@aliyun.com` or `zonghongyan@126.com`
 
-##### 简书
+##### blog
 
-简书博客会持续发布作者最新动态/实战项目等文章，欢迎访问
+welcome to visit，The blog will continue to release the latest dynamic/practical project the author of an article。
 
-![简书.png](/jianshu.png)
+[Home Page](https://zonghongyan.github.io)
+or
+[Jianshu Home Page](http://www.jianshu.com/u/ac49bc773ff9)
+
+![blog.png](/jianshu.png)
