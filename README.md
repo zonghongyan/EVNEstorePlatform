@@ -28,7 +28,7 @@ Follow and contact me on <a href="mailto:renboan@aliyun.com">renboan@aliyun.com<
 
 ### Blog
 
-welcome to visit，The blog will continue to release the latest dynamic/practical project the author of an article。
+Welcome to visit，The blog will continue to release the latest dynamic/practical project the author of an article。
 
 - [The home page](https://zonghongyan.github.io)
 - [Jianshu home page](http://www.jianshu.com/u/ac49bc773ff9)
