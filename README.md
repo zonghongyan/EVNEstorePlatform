@@ -26,9 +26,10 @@ Any contributing and pull requests are warmly welcome. However, before you plan 
 
 Follow and contact me on <a href="mailto:renboan@aliyun.com">renboan@aliyun.com</a>  or  <a href="mailto:zonghongyan@126.com">zonghongyan@126.com</a>. If you find an issue, just [open a ticket](https://github.com/zonghongyan/EVNEstorePlatform/issues/new). Pull requests are warmly welcome as well.
 
+
 ### Blog
 
-Welcome to visit，The blog will continue to release the latest dynamic/practical project the author of an article。
+Welcome to visit，The blog will continue to release the latest dynamic/practical project the author of an article
 
 - [The home page](https://zonghongyan.github.io)
 - [Jianshu home page](http://www.jianshu.com/u/ac49bc773ff9)
