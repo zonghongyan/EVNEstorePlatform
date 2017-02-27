@@ -8,8 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol EVNCarouselViewDelegete <NSObject>
+
+
+/**
+ * selected item
+ * @param indexItem index item
+ */
+- (void)carouselViewDidSelectItem:(NSInteger )indexItem;
+
+@end
+
 @interface EVNCarouselView : UIView<UICollectionViewDelegate, UICollectionViewDataSource>
 
+@property (nonatomic, weak) id<EVNCarouselViewDelegete>carouselViewDelegete;
+
 - (instancetype)initWithImageArray:(NSArray *)imageArray;
+
 
 @end

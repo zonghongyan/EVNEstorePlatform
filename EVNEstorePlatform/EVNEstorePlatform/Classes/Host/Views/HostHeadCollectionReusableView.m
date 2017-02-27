@@ -10,7 +10,7 @@
 
 #import "HelpHeaderFile.h"
 #import "HostHeaderCollectionViewCell.h"
-#import "EVNCarouselView.h"
+
 #import "HostHeaderCollectionViewCellFlowLayout.h"
 
 static NSString *ID = @"hostHeaderCollectionViewCell";
@@ -31,6 +31,7 @@ static NSString *ID = @"hostHeaderCollectionViewCell";
         CGFloat loopViewH = 200;
         NSArray *imageArray = @[@"pic.png", @"lunbo2.png", @"lunbo3.png", @"pic.png", @"lunbo2.png"];
         EVNCarouselView *loopView = [[EVNCarouselView alloc] initWithImageArray:imageArray];
+        loopView.carouselViewDelegete = self;
         loopView.frame = CGRectMake(0, 0, MainScreenWidth, loopViewH);
         [self addSubview:loopView];
 
@@ -97,5 +98,23 @@ static NSString *ID = @"hostHeaderCollectionViewCell";
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.hostHeadCollectionReusableViewDelegete respondsToSelector:@selector(hostHeadCollectionEventDidSelectIndex:)])
+    {
+        [self.hostHeadCollectionReusableViewDelegete hostHeadCollectionEventDidSelectIndex:indexPath.item];
+    }
+}
+
+/**
+ * EVNCarouselViewDelegete method
+ */
+- (void)carouselViewDidSelectItem:(NSInteger)indexItem
+{
+    if ([self.hostHeadCollectionReusableViewDelegete respondsToSelector:@selector(hostHeadCollectionCarouselViewEventDidSelectIndex:)])
+    {
+        [self.hostHeadCollectionReusableViewDelegete hostHeadCollectionCarouselViewEventDidSelectIndex:indexItem];
+    }
+}
 
 @end

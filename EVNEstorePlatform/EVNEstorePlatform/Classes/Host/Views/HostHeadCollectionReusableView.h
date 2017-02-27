@@ -7,8 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EVNCarouselView.h"
 
-@interface HostHeadCollectionReusableView : UICollectionReusableView<UICollectionViewDelegate, UICollectionViewDataSource>
+@protocol HostHeadCollectionReusableViewDelegete <NSObject>
 
+/**
+ * carouselView
+ * @param indexItem index item
+ */
+- (void)hostHeadCollectionCarouselViewEventDidSelectIndex:(NSInteger)indexItem;
+
+/**
+ * hostHeadCollection
+ * @param indexItem index item
+ */
+- (void)hostHeadCollectionEventDidSelectIndex:(NSInteger)indexItem;
+
+@end
+
+@interface HostHeadCollectionReusableView : UICollectionReusableView<UICollectionViewDelegate, UICollectionViewDataSource, EVNCarouselViewDelegete>
+
+@property (nonatomic, weak) id<HostHeadCollectionReusableViewDelegete>hostHeadCollectionReusableViewDelegete;
 
 @end

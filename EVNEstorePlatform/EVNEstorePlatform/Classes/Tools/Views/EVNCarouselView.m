@@ -77,7 +77,15 @@ static NSString *ID = @"carouselCollectionViewCell";
 
 #pragma mark - UICollectionViewDelegate
 
-#pragma mark: 开始拖地时调用
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([self.carouselViewDelegete respondsToSelector:@selector(carouselViewDidSelectItem:)])
+    {
+        [self.carouselViewDelegete carouselViewDidSelectItem:(indexPath.item % self.imageArray.count)];
+    }
+}
+
+#pragma mark: 开始拖时调用
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
 {
     [self scrollViewDidEndDecelerating:scrollView];
@@ -113,7 +121,7 @@ static NSString *ID = @"carouselCollectionViewCell";
 - (void)addTimer
 {
     if (self.timer) return;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(nextImage) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 

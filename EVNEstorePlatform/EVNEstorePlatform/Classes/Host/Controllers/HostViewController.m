@@ -10,7 +10,7 @@
 #import "HelpHeaderFile.h"
 #import "HostHeadCollectionViewFlowLayout.h"
 #import "HostCollectionViewCell.h"
-#import "HostHeadCollectionReusableView.h"
+
 
 
 static NSString *ID = @"hostCollectionViewCell";
@@ -28,7 +28,6 @@ static NSString *ID = @"hostCollectionViewCell";
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    //    self.navigationController.navigationBar.hidden = YES; // 隐藏navigationBar
     [UIView animateWithDuration:1.0 animations:^{
         [self.navigationController.navigationBar setValue:@(0.1) forKeyPath:@"backgroundView.alpha"];
     }];
@@ -92,6 +91,7 @@ static NSString *ID = @"hostCollectionViewCell";
 
     if (kind == UICollectionElementKindSectionHeader)  // 判断上面注册的UICollectionReusableView类型
     {
+        headerView.hostHeadCollectionReusableViewDelegete = self;
         return headerView;
     }
     else
@@ -192,6 +192,19 @@ static NSString *ID = @"hostCollectionViewCell";
     //    [self setHidesBottomBarWhenPushed:NO];
 
 }
+
+#pragma mark: HostHeadCollectionReusableViewDelegete method
+- (void)hostHeadCollectionCarouselViewEventDidSelectIndex:(NSInteger)indexItem
+{
+    NSLog(@"You are triggered by figure %ld", indexItem);
+}
+
+- (void)hostHeadCollectionEventDidSelectIndex:(NSInteger)indexItem
+{
+    NSLog(@"You trigger the index: %ld", indexItem);
+}
+
+#pragma mark: de alloc
 
 - (void)dealloc
 {
