@@ -4,3 +4,6 @@ xcode_workspace: EVNEstorePlatform/EVNEstorePlatform.xcworkspace
 xcode_schemes: EVNEstorePlatform
 
 profile: Podfile
+
+notifications:
+   webhooks: https://oapi.dingtalk.com/robot/send?access_token=68a6a49ca3b228dec80f0f88e4dd82f5fad665c13b06e2cca2495b6e57084c91
