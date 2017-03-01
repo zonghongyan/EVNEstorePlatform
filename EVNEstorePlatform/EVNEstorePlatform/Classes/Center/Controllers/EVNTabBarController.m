@@ -11,6 +11,8 @@
 
 @interface EVNTabBarController ()
 
+@property (nonatomic, strong) UIButton *centerBtn;
+
 @end
 
 @implementation EVNTabBarController
@@ -21,20 +23,18 @@
     // Do any additional setup after loading the view.
     [self initCutomBar];
 
-//    UIImageView *lineView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 2)];
-////    lineView.backgroundColor = TabBarColor;
-//    [self.tabBar addSubview:lineView];
-//    lineView.image = [UIImage imageNamed:@"tapbar_top_line"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tapbar_top_line"]]; // tab_background
 
     // 设置tabbar背景颜色
     [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]]; // 设置tabbar背景颜色
-    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]]; // 设置tabbar背景颜色
-    [[UITabBar appearance] setTintColor:UIColorFromRGB(0xe9a658)]; // 选中状态时候的字体颜色及背景
+    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];    // 设置tabbar背景颜色
+    [[UITabBar appearance] setTintColor:UIColorFromRGB(0xe9a658)];   // 选中状态时候的字体颜色及背景
     // 如果需要自定义图片就需要设置以下几行
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : TabBarUnSelectColor} forState:UIControlStateNormal]; // UITabBarItem未选中状态的颜色
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : UIColorFromRGB(0xe9a658)} forState:UIControlStateSelected]; // UITabBarItem选中状态的颜色
 
+// KVO tabbar hidden
+    [self.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,58 +44,62 @@
 
 - (void)initCutomBar
 {
-
-//    self.view.backgroundColor = [UIColor whiteColor];
     self.delegate = self;
 
 #pragma mark: 首页storyboard
-    UIImage *hostSelectImg = [UIImage imageNamed:@"hostViewSelect"];
-    UIImage *hostUnSelectImg = [UIImage imageNamed:@"hostViewUnSelect"];
+
     UIStoryboard *hostSB = [UIStoryboard storyboardWithName:@"Host" bundle:nil];
     UINavigationController *hostNaviVC = [hostSB instantiateViewControllerWithIdentifier:@"hostNavigationC"];
-    hostNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"首页" image:[self scaleImage:hostUnSelectImg] selectedImage:[self scaleImage:hostSelectImg]];
+    [self setChildViewController:hostNaviVC selectedImage:@"hostViewSelect" unSelectedImage:@"hostViewUnSelect" title:@"首页"];
     hostNaviVC.tabBarItem.tag = 0;
 
-
 #pragma mark: 关注storyboard
-    UIImage *attentionSelectImg = [UIImage imageNamed:@"attentionSelect.png"];
-    UIImage *attentionUnSelectImg = [UIImage imageNamed:@"attentionUnSelect.png"];
     UIStoryboard *attentionSB = [UIStoryboard storyboardWithName:@"Attention" bundle:nil];
     UINavigationController *attentionNaviVC = [attentionSB instantiateViewControllerWithIdentifier:@"attentionNavigationC"];
-    attentionNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"关注" image:[self scaleImage:attentionUnSelectImg] selectedImage:[self scaleImage:attentionSelectImg]];
+    [self setChildViewController:attentionNaviVC selectedImage:@"attentionSelect.png" unSelectedImage:@"attentionUnSelect.png" title:@"关注"];
     attentionNaviVC.tabBarItem.tag = 1;
 
 #pragma mark: 发现storyboard
+//    UIImage *findSelectImg = [UIImage imageNamed:@"findSelect.png"];
+//    UIImage *findUnSelectImImg = [UIImage imageNamed:@"findUnSelect.png"];
+//    UIStoryboard *findSB = [UIStoryboard storyboardWithName:@"Find" bundle:nil];
+//    UINavigationController *findNaviVC = [findSB instantiateViewControllerWithIdentifier:@"findNavigationC"];
+//    findNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageWithCGImage:findUnSelectImImg.CGImage scale:1.5 orientation:findUnSelectImImg.imageOrientation] selectedImage:[UIImage imageWithCGImage:findSelectImg.CGImage scale:1.5 orientation:findSelectImg.imageOrientation]];
+//
+//    [findNaviVC.tabBarItem setImageInsets:UIEdgeInsetsMake(-14, 0, 14, 0)];
+//    findNaviVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"findSelect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    findNaviVC.tabBarItem.image = [[UIImage imageNamed:@"findUnSelect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//
+//    findNaviVC.tabBarItem.tag = 2;
 
-    UIImage *findSelectImg = [UIImage imageNamed:@"findSelect.png"];
-    UIImage *findUnSelectImImg = [UIImage imageNamed:@"findUnSelect.png"];
     UIStoryboard *findSB = [UIStoryboard storyboardWithName:@"Find" bundle:nil];
     UINavigationController *findNaviVC = [findSB instantiateViewControllerWithIdentifier:@"findNavigationC"];
-    findNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"发现" image:[UIImage imageWithCGImage:findUnSelectImImg.CGImage scale:1.5 orientation:findUnSelectImImg.imageOrientation] selectedImage:[UIImage imageWithCGImage:findSelectImg.CGImage scale:1.5 orientation:findSelectImg.imageOrientation]];
-
-    [findNaviVC.tabBarItem setImageInsets:UIEdgeInsetsMake(-14, 0, 14, 0)];
-    findNaviVC.tabBarItem.tag = 2;
-
-    findNaviVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"findSelect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    findNaviVC.tabBarItem.image = [[UIImage imageNamed:@"findUnSelect.png"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    [self setChildViewController:findNaviVC selectedImage:nil unSelectedImage:nil title:@"发现"];
+    attentionNaviVC.tabBarItem.tag = 2;
+    [self addCenterButton:[UIImage imageNamed:@"findUnSelect.png"] selectedImage:[UIImage imageNamed:@"findSelect.png"]];
 
 #pragma mark: 购物车storyboard
-    UIImage *goodsCarSelectImg = [UIImage imageNamed:@"goodsCarSelect.png"];
-    UIImage *goodsCarUnSelectImg = [UIImage imageNamed:@"goodsCarUnSelect.png"];
     UIStoryboard *goodsCarSB = [UIStoryboard storyboardWithName:@"GoodsCar" bundle:nil];
     UINavigationController *goodsCarNaviVC = [goodsCarSB instantiateViewControllerWithIdentifier:@"goodsCarNavigationC"];
-    goodsCarNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"购物车" image:[self scaleImage:goodsCarUnSelectImg] selectedImage:[self scaleImage:goodsCarSelectImg]];
+    [self setChildViewController:goodsCarNaviVC selectedImage:@"goodsCarSelect.png" unSelectedImage:@"goodsCarUnSelect.png" title:@"购物车"];
+
     goodsCarNaviVC.tabBarItem.tag = 3;
 
 #pragma mark: 个人中心storyboard
-    UIImage *mineCenterSelectImg = [UIImage imageNamed:@"mineCenterSelect.png"];
-    UIImage *mineCenterUnSelectImg = [UIImage imageNamed:@"mineCenterUnSelect.png"];
     UIStoryboard *mineCenterSB = [UIStoryboard storyboardWithName:@"MineCenter" bundle:nil];
     UINavigationController *mineCenterNaviVC = [mineCenterSB instantiateViewControllerWithIdentifier:@"mineCenterNavigationC"];
-    mineCenterNaviVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我" image:[self scaleImage:mineCenterUnSelectImg] selectedImage:[self scaleImage:mineCenterSelectImg]];
+    [self setChildViewController:mineCenterNaviVC selectedImage:@"mineCenterSelect.png" unSelectedImage:@"mineCenterUnSelect.png" title:@"我"];
     mineCenterNaviVC.tabBarItem.tag = 4;
 
     self.viewControllers = @[hostNaviVC, attentionNaviVC, findNaviVC, goodsCarNaviVC, mineCenterNaviVC];
+}
+
+
+- (void)setChildViewController:(UIViewController *)viewController selectedImage:(NSString *)selectedImage unSelectedImage:(NSString *)unSelectedImage title:(NSString *)title
+{
+    UIImage *mineCenterSelectImg = [UIImage imageNamed:selectedImage];
+    UIImage *mineCenterUnSelectImg = [UIImage imageNamed:unSelectedImage];
+    viewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:[self scaleImage:mineCenterUnSelectImg] selectedImage:[self scaleImage:mineCenterSelectImg]];
 }
 
 - (UIImage *)scaleImage:(UIImage *)image
@@ -119,11 +123,50 @@
     return YES;
 }
 
-#pragma mark: 只要上面的shouldSelectViewController返回yes，下一步就执行该方法，下面为了单击在线咨询item，跳转至客服页面
-- (void) tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+#pragma mark: 只要上面的shouldSelectViewController返回yes，下一步就执行该方法
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
 {
     //    int index = (int)tabBarController.selectedIndex;
+    _centerBtn.selected = (self.selectedIndex == 2) ? YES : NO;
+
 }
 
+#pragma mark: Create a custom UIButton
+- (void)addCenterButton:(UIImage*)buttonImage selectedImage:(UIImage*)selectedImage
+{
+    _centerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [_centerBtn addTarget:self action:@selector(centerBtn:) forControlEvents:UIControlEventTouchUpInside];
+    _centerBtn.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
+
+    _centerBtn.frame = CGRectMake(0, 0, buttonImage.size.width, buttonImage.size.height); //  设定button大小为适应图片
+    [_centerBtn setImage:buttonImage forState:UIControlStateNormal];
+    [_centerBtn setImage:selectedImage forState:UIControlStateSelected];
+
+    _centerBtn.adjustsImageWhenHighlighted = NO;
+    CGPoint center = self.tabBar.center;
+    center.y = center.y - buttonImage.size.height/3;
+    _centerBtn.center = center;
+    [self.view addSubview:_centerBtn];
+}
+
+- (void)centerBtn:(UIButton *)sender
+{
+    [self setSelectedIndex:2];
+    sender.selected = YES;
+}
+
+// KVO tabbar hidden
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    if ([object isEqual:self.tabBar] && [keyPath isEqualToString:@"hidden"])
+    {
+        _centerBtn.hidden = self.tabBar.hidden;
+    }
+}
+// remove 
+//- (void)dealloc
+//{
+//    [self.tabBar removeObserver:self forKeyPath:@"hidden"];
+//}
 
 @end
