@@ -14,6 +14,7 @@
 @property (nonatomic, strong) UIButton *centerBtn;
 
 @end
+static void *kInputStateControlObservingContext = &kInputStateControlObservingContext;
 
 @implementation EVNTabBarController
 
@@ -34,7 +35,7 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : UIColorFromRGB(0xe9a658)} forState:UIControlStateSelected]; // UITabBarItem选中状态的颜色
 
 // KVO tabbar hidden
-    [self.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+    [self.tabBar addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:&kInputStateControlObservingContext];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -160,13 +161,17 @@
 {
     if ([object isEqual:self.tabBar] && [keyPath isEqualToString:@"hidden"])
     {
-        _centerBtn.hidden = self.tabBar.hidden;
+        _centerBtn.hidden = self.tabBar.hidden; // synchronization view state
+
+        if ([object isFinished])
+        {
+            @try {
+                [object removeObserver:self forKeyPath:@"hidden"]; // remove Observer
+            }
+            @catch (NSException * __unused exception) {}
+        }
     }
 }
-// remove 
-//- (void)dealloc
-//{
-//    [self.tabBar removeObserver:self forKeyPath:@"hidden"];
-//}
+
 
 @end
