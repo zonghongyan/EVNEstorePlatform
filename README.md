@@ -1,6 +1,6 @@
 # EVNEstorePlatform
-[![Build Status](https://travis-ci.org/zonghongyan/EVNEstorePlatform.svg?branch=master)](https://travis-ci.org/zonghongyan/EVNEstorePlatform)
-[![License](https://img.shields.io/github/license/zonghongyan/EVNEstorePlatform.svg?style=flat)](https://github.com/zonghongyan/EVNEstorePlatform/blob/master/LICENSE)
+[![](https://travis-ci.org/zonghongyan/EVNEstorePlatform.svg?branch=master)](https://travis-ci.org/zonghongyan/EVNEstorePlatform)
+[![](https://img.shields.io/github/license/zonghongyan/EVNEstorePlatform.svg?style=flat)](https://github.com/zonghongyan/EVNEstorePlatform/blob/master/LICENSE)
 
 ### Electronic commerce iOS APP framework
 
