@@ -46,6 +46,8 @@
 		8B936AC81E1B8DF000132B31 /* EVNCarouselCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936AC71E1B8DF000132B31 /* EVNCarouselCollectionViewCell.m */; };
 		8B936ACB1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936ACA1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m */; };
 		8B936ACE1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B936ACD1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m */; };
+		8BB3C9CD1E977AC30044FC15 /* GoodsNaviTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3C9C91E977AC30044FC15 /* GoodsNaviTitleView.m */; };
+		8BB3C9D11E977B020044FC15 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3C9D01E977B020044FC15 /* UIView+Extension.m */; };
 		8BD034501E4C619100BCD682 /* UITableView+NoDataOrException.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BD0344F1E4C619100BCD682 /* UITableView+NoDataOrException.m */; };
 		9A68AEDBF92343F6CCB14848 /* libPods-EVNEstorePlatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B81D758FCDB9D2F85E0E04 /* libPods-EVNEstorePlatform.a */; };
 /* End PBXBuildFile section */
@@ -139,6 +141,10 @@
 		8B936ACA1E1B8E2B00132B31 /* EVNCarouseCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVNCarouseCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		8B936ACC1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostHeaderCollectionViewCellFlowLayout.h; sourceTree = "<group>"; };
 		8B936ACD1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostHeaderCollectionViewCellFlowLayout.m; sourceTree = "<group>"; };
+		8BB3C9C81E977AC30044FC15 /* GoodsNaviTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodsNaviTitleView.h; sourceTree = "<group>"; };
+		8BB3C9C91E977AC30044FC15 /* GoodsNaviTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodsNaviTitleView.m; sourceTree = "<group>"; };
+		8BB3C9CF1E977B020044FC15 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		8BB3C9D01E977B020044FC15 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		8BD0344E1E4C619100BCD682 /* UITableView+NoDataOrException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NoDataOrException.h"; sourceTree = "<group>"; };
 		8BD0344F1E4C619100BCD682 /* UITableView+NoDataOrException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NoDataOrException.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -547,6 +553,8 @@
 		8B936AB61E1B8BDA00132B31 /* others */ = {
 			isa = PBXGroup;
 			children = (
+				8BB3C9C81E977AC30044FC15 /* GoodsNaviTitleView.h */,
+				8BB3C9C91E977AC30044FC15 /* GoodsNaviTitleView.m */,
 				8B936AB71E1B8C3E00132B31 /* HostHeadCollectionViewFlowLayout.h */,
 				8B936AB81E1B8C3E00132B31 /* HostHeadCollectionViewFlowLayout.m */,
 				8B936ACC1E1B8EA800132B31 /* HostHeaderCollectionViewCellFlowLayout.h */,
@@ -558,6 +566,8 @@
 		8BD0344D1E4C616300BCD682 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				8BB3C9CF1E977B020044FC15 /* UIView+Extension.h */,
+				8BB3C9D01E977B020044FC15 /* UIView+Extension.m */,
 				8BD0344E1E4C619100BCD682 /* UITableView+NoDataOrException.h */,
 				8BD0344F1E4C619100BCD682 /* UITableView+NoDataOrException.m */,
 			);
@@ -762,7 +772,9 @@
 				8B145E841E16445A0036ED7A /* AttentionViewController.m in Sources */,
 				8B6BAB031E332BFC00B6CCA1 /* EVNHUD.m in Sources */,
 				8B4FE5F41E1A77CC0049658B /* EVNPopView.m in Sources */,
+				8BB3C9D11E977B020044FC15 /* UIView+Extension.m in Sources */,
 				8B32F8401E16048600308053 /* main.m in Sources */,
+				8BB3C9CD1E977AC30044FC15 /* GoodsNaviTitleView.m in Sources */,
 				8B936AC51E1B8DB200132B31 /* EVNCarouselView.m in Sources */,
 				8B936ABC1E1B8CB200132B31 /* HostCollectionViewCell.m in Sources */,
 				8B145E871E16446A0036ED7A /* FindViewController.m in Sources */,
