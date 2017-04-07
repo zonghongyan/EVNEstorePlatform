@@ -148,7 +148,7 @@ static NSString *ID = @"hostCollectionViewCell";
 - (BOOL)evnSearchBarShouldBeginEditing:(UISearchBar *)searchBar
 {
     [self.searchBar setShowsCancelButton:YES animated:YES];
-    [self.tabBarController.tabBar setHidden:YES];
+//    [self.tabBarController.tabBar setHidden:YES];
 
     hotWordSearchViewController = [[HotWordSearchViewController alloc] initWithViewControllerName:@"HostViewController"];
 
@@ -163,7 +163,7 @@ static NSString *ID = @"hostCollectionViewCell";
 - (void)hotWordSearchDismiss
 {
     [self.searchBar setShowsCancelButton:NO animated:YES];
-    [self.tabBarController.tabBar setHidden:NO];
+//    [self.tabBarController.tabBar setHidden:NO];
 
     for (UIViewController *viewController in self.childViewControllers)
     {
@@ -204,8 +204,12 @@ static NSString *ID = @"hostCollectionViewCell";
     NSLog(@"You trigger the index: %ld", indexItem);
 }
 
-#pragma mark: de alloc
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"You trigger the index: %ld", indexPath.item);
+}
 
+#pragma mark: dealloc
 - (void)dealloc
 {
     // 移除监听
