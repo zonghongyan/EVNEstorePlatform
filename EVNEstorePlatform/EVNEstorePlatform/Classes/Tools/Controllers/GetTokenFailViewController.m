@@ -23,14 +23,16 @@
 {
     [super viewWillAppear:YES];
     [EVNHUD showLoadingHUDWithText:nil inView:self.view];; // 只显示图片加载
-    [self verification];
+
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+//    self.view.backgroundColor = [UIColor whiteColor];
     appDel = (AppDelegate *)[UIApplication sharedApplication].delegate;
     self.view.alpha = 0.5;
+    [self verification];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
